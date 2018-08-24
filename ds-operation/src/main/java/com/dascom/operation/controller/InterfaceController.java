@@ -9,6 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,19 +40,25 @@ public class InterfaceController {
 	}
 	
 	
+	/**
+	 * 获取接口返回信息
+	 * @return
+	 * @throws Exception
+	 */
 	@RequestMapping("getData")
-	public List<Map<String,Object>> save() throws Exception{
+	public List<Map<String,Object>> getData() throws Exception{
 		List<Map<String,Object>> resultList = new ArrayList<Map<String,Object>>();
 		long start = System.currentTimeMillis();
 		//判断redis：db15是否为空
 		int keysSize = redisService.getAllkey().size();
 		if(keysSize==0){
 			logger.info("------从mongodb中读取数据------");
+			
 			List<CollectionInterface> interfaceLists = interfaceService.getAllInterface();
+			logger.info("------redis没有数据，从mongodb中导入------");
 			for(CollectionInterface inter : interfaceLists){
 				MongoJoinPara mongoJoinPara = new MongoJoinPara();
-				resultList.add(mongoJoinPara.mongoToHttpClient(inter, domain));
-				logger.info("------redis没有数据，从mongodb中导入------");
+				resultList.add(mongoJoinPara.mongoToHttpClient(inter));
 				redisService.copyData(inter);
 			}
 			logger.info("------存入redis成功------");
@@ -67,10 +74,14 @@ public class InterfaceController {
 		}
 		long end = System.currentTimeMillis();
 		logger.info("总耗时："+(end-start));
-		
 		return resultList;
 	}
 	
+	
+	@RequestMapping("addInter")
+	public void add(@RequestBody String inter) {
+		
+	}
 	
 	
 	

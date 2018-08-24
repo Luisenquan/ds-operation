@@ -30,7 +30,12 @@ public class RedisServiceImpl implements RedisService {
 	private RedisTemplate<String, ?> redisTemplate;
 	
 	@Autowired
-	private RedisConnectionFactory connectionFactory;
+	private  RedisConnectionFactory connectionFactory;
+	
+	private  Jedis getRedis() {
+		Jedis redis = (Jedis) connectionFactory.getConnection().getNativeConnection();
+		return redis;
+	}
 
 
 	@Override
@@ -53,6 +58,8 @@ public class RedisServiceImpl implements RedisService {
 
 		return resultMap;
 	}
+	
+	
 
 	@Override
 	public void copyData(Object obj) throws Exception {
@@ -71,12 +78,12 @@ public class RedisServiceImpl implements RedisService {
 
 	//Use redis pipeline
 	public Map<String, Map<String, String>> hgetByPipeline() {
-		Jedis redis = (Jedis) connectionFactory.getConnection().getNativeConnection();
+		Jedis redis = getRedis();
 		Pipeline p = redis.pipelined();
 		Set<String> keys = redis.keys("*");
 		Map<String, Map<String, String>> result = new HashMap<String, Map<String, String>>();
 		Map<String, Response<Map<String, String>>> responses = new HashMap<String, Response<Map<String, String>>>(keys.size());
-		long start = System.currentTimeMillis();
+		//long start = System.currentTimeMillis();
 		for (String key : keys) {
 			responses.put(key, p.hgetAll(key));
 		}
@@ -84,11 +91,14 @@ public class RedisServiceImpl implements RedisService {
 		for (String k : responses.keySet()) {
 			result.put(k, responses.get(k).get());
 		}
-		long end = System.currentTimeMillis();
-		System.out.println("hgetAll with pipeline used [" + (end - start) / 1000 + "] seconds ..");
+		//long end = System.currentTimeMillis();
+		//System.out.println("hgetAll with pipeline used [" + (end - start) / 1000 + "] seconds ..");
 		redis.disconnect();
 		return result;
 	}
+
+
+	
 
 
 }

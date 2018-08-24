@@ -23,4 +23,10 @@ public class InterfaceServiceImpl implements InterfaceService{
 		return interfaceMongoTemplate.findAll(CollectionInterface.class);
 	}
 
+
+	@Override
+	public void addInterface(CollectionInterface inter) {
+		interfaceMongoTemplate.insert(inter);
+	}
+
 }

@@ -20,11 +20,26 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.alibaba.fastjson.JSON;
 
-public class HttpClientUtils {
 
+public class HttpClientUtils {
+	
+	private static final Logger logger = LogManager.getLogger(HttpClientUtils.class);
+	
+	static CloseableHttpClient client = null;
+	static CloseableHttpResponse response = null;
+	
+	//设置连接超时
+	private static 
+	RequestConfig requestConfig = RequestConfig.custom()
+	.setConnectionRequestTimeout(1000)
+	.setConnectTimeout(5000)
+	.setSocketTimeout(5000).build();
+	
 	/**
 	 * 封装请求头
 	 * 
@@ -43,6 +58,8 @@ public class HttpClientUtils {
 			}
 		}
 	}
+	
+	
 
 	/**
 	 * httpclient get请求
@@ -52,22 +69,21 @@ public class HttpClientUtils {
 	 * @return
 	 */
 	public static Map<String, Object> doGet(String url, String headerPara) {
-		CloseableHttpClient client = null;
-		CloseableHttpResponse response = null;
+		/*CloseableHttpClient client = null;
+		CloseableHttpResponse response = null;*/
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		try {
 			client = HttpClients.createDefault();
 			HttpGet httpGet = new HttpGet(url);
+			httpGet.setConfig(requestConfig);
 			response = client.execute(httpGet);
 			int statusCode = response.getStatusLine().getStatusCode();
 			resultMap.put("statusCode", statusCode);
 			HttpEntity entity = response.getEntity();
 			String resultLine = EntityUtils.toString(entity, "UTF-8");
 			resultMap.put("resultLine", resultLine);
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (Exception e){
+			logger.info(e);
 		} finally {
 			try {
 				response.close();
@@ -92,12 +108,14 @@ public class HttpClientUtils {
 	 * @throws Exception
 	 */
 	public static Map<String, Object> doPost(String url, String body, String headerParam) {
-		CloseableHttpClient client = null;
-		CloseableHttpResponse response = null;
+		
+		/*CloseableHttpClient client = null;
+		CloseableHttpResponse response = null;*/
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		try {
 			client = HttpClients.createDefault();
 			HttpPost post = new HttpPost(url);
+			post.setConfig(requestConfig);
 			// 设置请求头
 			packageHeader(headerParam, post);
 			post.setEntity(new StringEntity(body));
@@ -108,12 +126,8 @@ public class HttpClientUtils {
 			HttpEntity entity = response.getEntity();
 			String resultLine = EntityUtils.toString(entity, "UTF-8");
 			resultMap.put("resultLine", resultLine);
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch  (Exception e){
+			logger.info(e);
 		} finally {
 			try {
 				response.close();
@@ -137,12 +151,13 @@ public class HttpClientUtils {
 	 * @throws IOException
 	 */
 	public static Map<String, Object> doDelete(String url, String headerParam) {
-		CloseableHttpClient client = null;
-		CloseableHttpResponse response = null;
+		/*CloseableHttpClient client = null;
+		CloseableHttpResponse response = null;*/
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		try {
 			client = HttpClients.createDefault();
 			HttpDelete delete = new HttpDelete(url);
+			delete.setConfig(requestConfig);
 			// 设置请求头
 			packageHeader(headerParam, delete);
 			RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(50000).setSocketTimeout(50000)
@@ -159,10 +174,8 @@ public class HttpClientUtils {
 			}
 			resultMap.put("resultLine", resultLine);
 
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (Exception e){
+			logger.info(e);
 		} finally {
 			try {
 				response.close();
@@ -187,12 +200,13 @@ public class HttpClientUtils {
 	 * @throws IOException
 	 */
 	public static Map<String, Object> doPatch(String url, String jsonPara, String headerParam) {
-		CloseableHttpClient client = null;
-		CloseableHttpResponse response = null;
+		/*CloseableHttpClient client = null;
+		CloseableHttpResponse response = null;*/
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		try {
 			client = HttpClients.createDefault();
 			HttpPatch patch = new HttpPatch(url);
+			patch.setConfig(requestConfig);
 			// 设置请求头
 			packageHeader(headerParam, patch);
 			// 设置json参数
@@ -208,12 +222,8 @@ public class HttpClientUtils {
 			}
 			resultMap.put("resultLine", resultLine);
 
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (Exception e){
+			logger.info(e);
 		} finally {
 			try {
 				response.close();

@@ -12,7 +12,7 @@ public interface RedisService {
 	//获取所有hash中的key和对应的map
 	Map<String,Map<Object,Object>> getAllHash();
 	
-	//从mongodb复制数据到redis
+	//从mongodb复制数据到redis 使用pipeline
 	void copyData(Object obj) throws Exception;
 	
 	

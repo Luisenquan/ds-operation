@@ -12,20 +12,18 @@ public class CollectionInterface implements Serializable{
 	private static final long serialVersionUID = -956081880943583457L;
 	
 	@Id
-	private String _id;
+	private String id;
 	private String interfaceName;
 	private String method;
-	private String portName;
 	private String requestUrl;
 	private String jsonParameter;
-	private String urlParameter;
 	private String headerParameter;
 	private String note;
-	public String get_id() {
-		return _id;
+	public String getId() {
+		return id;
 	}
-	public void set_id(String _id) {
-		this._id = _id;
+	public void setId(String id) {
+		this.id = id;
 	}
 	public String getInterfaceName() {
 		return interfaceName;
@@ -39,12 +37,6 @@ public class CollectionInterface implements Serializable{
 	public void setMethod(String method) {
 		this.method = method;
 	}
-	public String getPortName() {
-		return portName;
-	}
-	public void setPortName(String portName) {
-		this.portName = portName;
-	}
 	public String getRequestUrl() {
 		return requestUrl;
 	}
@@ -56,12 +48,6 @@ public class CollectionInterface implements Serializable{
 	}
 	public void setJsonParameter(String jsonParameter) {
 		this.jsonParameter = jsonParameter;
-	}
-	public String getUrlParameter() {
-		return urlParameter;
-	}
-	public void setUrlParameter(String urlParameter) {
-		this.urlParameter = urlParameter;
 	}
 	public String getHeaderParameter() {
 		return headerParameter;
@@ -75,22 +61,23 @@ public class CollectionInterface implements Serializable{
 	public void setNote(String note) {
 		this.note = note;
 	}
-	public CollectionInterface(String _id, String interfaceName, String method, String portName, String requestUrl,
-			String jsonParameter, String urlParameter, String headerParameter, String note) {
+	public CollectionInterface(String id, String interfaceName, String method, String requestUrl, String jsonParameter,
+			String headerParameter, String note) {
 		super();
-		this._id = _id;
+		this.id = id;
 		this.interfaceName = interfaceName;
 		this.method = method;
-		this.portName = portName;
 		this.requestUrl = requestUrl;
 		this.jsonParameter = jsonParameter;
-		this.urlParameter = urlParameter;
 		this.headerParameter = headerParameter;
 		this.note = note;
 	}
 	public CollectionInterface() {
 		super();
 	}
+	
+	
+	
 	
 	
 

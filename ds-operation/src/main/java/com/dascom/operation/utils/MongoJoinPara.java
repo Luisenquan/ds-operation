@@ -19,39 +19,36 @@ public class MongoJoinPara {
 	
 	Map<String,Object> resultMap = null;
 
-	public Map<String, Object> mongoToHttpClient(CollectionInterface inter,String domain) {
-		String portName = inter.getPortName();
+	public Map<String, Object> mongoToHttpClient(CollectionInterface inter) {
+		
 		String requestUrl = inter.getRequestUrl();
-		String urlPara = inter.getUrlParameter();
-		urlPara = urlPara==null?"":urlPara;
-		String url = domain+portName+requestUrl+urlPara;
-		logger.info("------接口地址------："+url);
+		
+		//logger.info("------接口地址------："+url);
 		String jsonPara = inter.getJsonParameter();
 		jsonPara = jsonPara==null?"":jsonPara;
 		String headerPara = inter.getHeaderParameter();
 		headerPara = headerPara==null?"":headerPara;
-		String method = inter.getMethod();
+		String method = inter.getMethod().toLowerCase(); //转小写
 		switch (method) {
 			case "get":
-				logger.info("------调用get请求----");
-				resultMap = HttpClientUtils.doGet(url, headerPara);
+				//logger.info("------调用get请求----");
+				resultMap = HttpClientUtils.doGet(requestUrl, headerPara);
 				break;
 			case "post":
-				logger.info("------调用post请求----");
-				resultMap = HttpClientUtils.doPost(url, jsonPara, headerPara);
-				logger.info("------请求参数------："+jsonPara);
+				//logger.info("------调用post请求----");
+				resultMap = HttpClientUtils.doPost(requestUrl, jsonPara, headerPara);
+				//logger.info("------请求参数------："+jsonPara);
 				break;
 			case "delete":
-				logger.info("------调用delete请求----");
-				resultMap = HttpClientUtils.doDelete(url, headerPara);
+				//logger.info("------调用delete请求----");
+				resultMap = HttpClientUtils.doDelete(requestUrl, headerPara);
 				break;
 			case "patch":
-				logger.info("------调用patch请求----");
-				resultMap = HttpClientUtils.doPatch(url, jsonPara, headerPara);
-				logger.info("------请求参数------："+jsonPara);
+				//logger.info("------调用patch请求----");
+				resultMap = HttpClientUtils.doPatch(requestUrl, jsonPara, headerPara);
+				//logger.info("------请求参数------："+jsonPara);
 				break;
 		}
-
 		return resultMap;
 	}
 
