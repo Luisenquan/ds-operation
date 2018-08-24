@@ -19,9 +19,4 @@ public class RedisController {
 		return redisService.getAllHash();
 	}
 	
-	@RequestMapping("testRedis")
-	public Map<String, Map<String, String>> test() {
-		return redisService.test();
-	}
-
 }

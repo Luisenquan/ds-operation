@@ -15,5 +15,8 @@ public interface RedisService {
 	//从mongodb复制数据到redis
 	void copyData(Object obj) throws Exception;
 	
-	Map<String, Map<String, String>> test();
+	
+	//Use redis pipeline
+	Map<String, Map<String, String>> hgetByPipeline();
+	
 }

@@ -7,6 +7,8 @@ import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 
 import com.fasterxml.jackson.databind.deser.std.JdkDeserializers;
 
@@ -45,7 +47,10 @@ public class RedisConfig extends CachingConfigurerSupport{
     @Value("${spring.redis.password}")
     private String password;
     
-    @Bean
+    @Value("${spring.redis.database}")
+    private int db;
+    
+    /*@Bean
     public JedisPool redisPoolFactory() {
     	logger.info("------JedisPool注入成功！------");
     	logger.info("------redis地址:"+host+":"+port+"------");
@@ -54,6 +59,21 @@ public class RedisConfig extends CachingConfigurerSupport{
     	jedisPoolConfig.setMaxWaitMillis(maxWaitMillis);
     	JedisPool jedisPool = new JedisPool(jedisPoolConfig,host,port,timeout);
     	return jedisPool;
+    }*/
+    
+    @Bean
+    public RedisConnectionFactory redisConnectionFactory() {
+    	logger.info("------JedisPool注入成功！------");
+    	logger.info("------redis地址:"+host+":"+port+"------");
+    	JedisPoolConfig poolConfig = new JedisPoolConfig();
+    	poolConfig.setMaxIdle(maxIdle);
+    	poolConfig.setMaxWaitMillis(maxWaitMillis);
+    	JedisConnectionFactory jedisConnectionFactory = new JedisConnectionFactory(poolConfig);
+    	jedisConnectionFactory.setHostName(host);
+    	jedisConnectionFactory.setPort(port);
+    	jedisConnectionFactory.setPassword(password);
+    	jedisConnectionFactory.setDatabase(db);
+    	return jedisConnectionFactory;
     }
     
     

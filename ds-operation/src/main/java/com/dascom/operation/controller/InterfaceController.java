@@ -51,16 +51,16 @@ public class InterfaceController {
 			for(CollectionInterface inter : interfaceLists){
 				MongoJoinPara mongoJoinPara = new MongoJoinPara();
 				resultList.add(mongoJoinPara.mongoToHttpClient(inter, domain));
-				logger.info("redis没有数据，从mongodb中导入");
+				logger.info("------redis没有数据，从mongodb中导入------");
 				redisService.copyData(inter);
 			}
-			logger.info("存入redis成功");
+			logger.info("------存入redis成功------");
 		}else{
-			logger.info("从redis中读取数据！");
-			Map<String,Map<Object,Object>> resultMap = redisService.getAllHash();
+			logger.info("------从redis中读取数据！------");
+			Map<String,Map<String,String>> resultMap = redisService.hgetByPipeline();
 			//Map<String,Map<Object,Object>> resultMap = redisService.testRedis();
 			for(String key:resultMap.keySet()){
-				Map<Object,Object> interMap = resultMap.get(key);
+				Map<String,String> interMap = resultMap.get(key);
 				RedisJoinPara redisJoinPara = new RedisJoinPara();
 				resultList.add(redisJoinPara.redisToHttpClient(interMap, domain));
 			}

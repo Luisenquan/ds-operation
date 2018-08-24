@@ -8,6 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
@@ -29,7 +30,7 @@ public class RedisServiceImpl implements RedisService {
 	private RedisTemplate<String, ?> redisTemplate;
 	
 	@Autowired
-	private JedisPool jedisPool;
+	private RedisConnectionFactory connectionFactory;
 
 
 	@Override
@@ -68,17 +69,13 @@ public class RedisServiceImpl implements RedisService {
 		redisTemplate.opsForHash().putAll(key, resultMap);
 	}
 
-	public Map<String, Map<String, String>> test() {
-		Jedis redis = jedisPool.getResource();
-		//Jedis redis = new Jedis(hostName, port);
+	//Use redis pipeline
+	public Map<String, Map<String, String>> hgetByPipeline() {
+		Jedis redis = (Jedis) connectionFactory.getConnection().getNativeConnection();
 		Pipeline p = redis.pipelined();
-		redis.select(8);
-		redis.flushDB();
-
 		Set<String> keys = redis.keys("*");
 		Map<String, Map<String, String>> result = new HashMap<String, Map<String, String>>();
-		Map<String, Response<Map<String, String>>> responses = new HashMap<String, Response<Map<String, String>>>(
-				keys.size());
+		Map<String, Response<Map<String, String>>> responses = new HashMap<String, Response<Map<String, String>>>(keys.size());
 		long start = System.currentTimeMillis();
 		for (String key : keys) {
 			responses.put(key, p.hgetAll(key));
@@ -92,5 +89,6 @@ public class RedisServiceImpl implements RedisService {
 		redis.disconnect();
 		return result;
 	}
+
 
 }
