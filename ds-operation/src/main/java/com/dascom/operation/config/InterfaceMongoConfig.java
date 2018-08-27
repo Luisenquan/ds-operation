@@ -23,7 +23,7 @@ import com.mongodb.MongoClientURI;
 public class InterfaceMongoConfig {
 	
 	@Bean
-	@ConfigurationProperties(prefix="sprint.data.interface.mongodb")
+	@ConfigurationProperties(prefix="spring.data.interface.mongodb")
 	public MongoProperties interfaceMongoProperties(){
 		return new MongoProperties();
 	}

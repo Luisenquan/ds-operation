@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.alibaba.fastjson.JSONObject;
 import com.dascom.operation.entity.CollectionInterface;
 import com.dascom.operation.service.InterfaceService;
 import com.dascom.operation.service.RedisService;
@@ -80,7 +81,7 @@ public class InterfaceController {
 	
 	@RequestMapping("addInter")
 	public void add(@RequestBody String inter) {
-		
+		JSONObject interObj = JSONObject.parseObject(inter);
 	}
 	
 	
