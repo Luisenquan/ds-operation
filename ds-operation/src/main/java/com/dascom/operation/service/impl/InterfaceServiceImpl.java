@@ -14,19 +14,19 @@ import com.dascom.operation.service.InterfaceService;
 public class InterfaceServiceImpl implements InterfaceService{
 	
 	@Autowired
-	@Qualifier("interfaceMongoTemplate")
-	MongoTemplate interfaceMongoTemplate;
+	@Qualifier("operationMongoTemplate")
+	MongoTemplate operationMongoTemplate;
 
 
 	public List<CollectionInterface> getAllInterface() {
 		
-		return interfaceMongoTemplate.findAll(CollectionInterface.class);
+		return operationMongoTemplate.findAll(CollectionInterface.class);
 	}
 
 
 	@Override
 	public void addInterface(CollectionInterface inter) {
-		interfaceMongoTemplate.insert(inter);
+		operationMongoTemplate.insert(inter);
 	}
 
 }

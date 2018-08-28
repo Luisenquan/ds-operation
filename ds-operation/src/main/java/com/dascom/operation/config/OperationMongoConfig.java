@@ -20,25 +20,25 @@ import com.mongodb.MongoClientURI;
  * @project_name ds-operation
  */
 @Configuration
-public class InterfaceMongoConfig {
+public class OperationMongoConfig {
 	
 	@Bean
-	@ConfigurationProperties(prefix="spring.data.interface.mongodb")
-	public MongoProperties interfaceMongoProperties(){
+	@ConfigurationProperties(prefix="spring.data.operation.mongodb")
+	public MongoProperties operationMongoProperties(){
 		return new MongoProperties();
 	}
 	
-	@Bean(name="interfaceMongoTemplate")
-	public MongoTemplate interfaceMongoTemplate() throws Exception{
-		MongoDbFactory factory = interfaceFactory(interfaceMongoProperties());
+	@Bean(name="operationMongoTemplate")
+	public MongoTemplate operationMongoTemplate() throws Exception{
+		MongoDbFactory factory = operationFactory(operationMongoProperties());
 		MappingMongoConverter converter = new MappingMongoConverter(factory,  new MongoMappingContext());
 		converter.setTypeMapper(new DefaultMongoTypeMapper(null));
 		return new MongoTemplate(factory,converter);
 	}
 	
 	@Bean
-	public MongoDbFactory interfaceFactory(MongoProperties mongoProperties) throws Exception{
-		MongoProperties mongoProperties1 = interfaceMongoProperties();
+	public MongoDbFactory operationFactory(MongoProperties mongoProperties) throws Exception{
+		MongoProperties mongoProperties1 = operationMongoProperties();
 		return new SimpleMongoDbFactory(new MongoClientURI(mongoProperties1.getUri()));
 	}
 

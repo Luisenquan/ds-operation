@@ -22,9 +22,9 @@ import com.dascom.operation.utils.RedisJoinPara;
 
 
 @RestController
-public class InterfaceController {
+public class QperationController {
 	
-	private static final Logger logger = LogManager.getLogger(InterfaceController.class);
+	private static final Logger logger = LogManager.getLogger(QperationController.class);
 	
 	@Autowired
 	private InterfaceService interfaceService;

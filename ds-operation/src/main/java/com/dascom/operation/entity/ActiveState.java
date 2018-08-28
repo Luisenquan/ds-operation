@@ -16,6 +16,8 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document(collection="collection_active_state")
 public class ActiveState implements Serializable{
+
+	private static final long serialVersionUID = -7421834075567757233L;
 	
 	@Id
 	private String _id;

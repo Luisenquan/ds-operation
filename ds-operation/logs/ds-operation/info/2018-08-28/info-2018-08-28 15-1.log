@@ -1,0 +1,8 @@
+2018-08-28 15:22:10 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-08-28 15:22:10 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-08-28 15:47:48 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-08-28 15:47:48 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-08-28 15:47:53 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-08-28 15:47:53 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-08-28 15:49:06 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-08-28 15:49:06 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
