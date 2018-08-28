@@ -11,7 +11,7 @@ public class RedisJoinPara {
 	
 	Map<String,Object> resultMap = null;
 	
-	public Map<String,Object> redisToHttpClient(Map<String,String> interMap,String domain){
+	public Map<String,Object> redisToHttpClient(Map<String,String> interMap){
 		
 		String requestUrl = interMap.get("requestUrl");
 		String jsonPara = interMap.get("jsonParameter");

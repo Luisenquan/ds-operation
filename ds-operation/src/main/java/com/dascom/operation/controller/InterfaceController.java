@@ -32,8 +32,7 @@ public class InterfaceController {
 	@Autowired
 	private RedisService redisService;
 	
-	@Value("${domainName}")
-	String domain;
+	
 	
 	@RequestMapping("localInterface")
 	public List<CollectionInterface> getLocalInterface(){
@@ -70,7 +69,7 @@ public class InterfaceController {
 			for(String key:resultMap.keySet()){
 				Map<String,String> interMap = resultMap.get(key);
 				RedisJoinPara redisJoinPara = new RedisJoinPara();
-				resultList.add(redisJoinPara.redisToHttpClient(interMap, domain));
+				resultList.add(redisJoinPara.redisToHttpClient(interMap));
 			}
 		}
 		long end = System.currentTimeMillis();

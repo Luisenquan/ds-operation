@@ -1,0 +1,7 @@
+2018-08-28 09:48:50 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-08-28 09:48:50 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-08-28 09:49:32 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-08-28 09:49:32 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-08-28 09:50:32 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-08-28 09:50:32 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-08-28 09:50:40 INFO [HttpClientUtils.java:130] - org.apache.http.conn.HttpHostConnectException: Connect to 192.168.11.148:20003 [/192.168.11.148] failed: Connection refused: connect

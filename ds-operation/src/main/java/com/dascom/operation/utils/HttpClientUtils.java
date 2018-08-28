@@ -119,7 +119,7 @@ public class HttpClientUtils {
 			// 设置请求头
 			packageHeader(headerParam, post);
 			post.setEntity(new StringEntity(body));
-			// ִ获取返回信息
+			// 获取返回信息
 			response = client.execute(post);
 			int statusCode = response.getStatusLine().getStatusCode();
 			resultMap.put("statusCode", statusCode);

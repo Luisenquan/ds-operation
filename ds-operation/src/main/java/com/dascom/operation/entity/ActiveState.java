@@ -24,7 +24,7 @@ public class ActiveState implements Serializable{
 	@Field("latest_statistical")
 	private Date latestStatistical;
 	@Field("online_time")
-	private int onlineTime;
+	private long onlineTime;
 	public String get_id() {
 		return _id;
 	}
@@ -43,13 +43,13 @@ public class ActiveState implements Serializable{
 	public void setLatestStatistical(Date latestStatistical) {
 		this.latestStatistical = latestStatistical;
 	}
-	public int getOnlineTime() {
+	public long getOnlineTime() {
 		return onlineTime;
 	}
-	public void setOnlineTime(int onlineTime) {
+	public void setOnlineTime(long onlineTime) {
 		this.onlineTime = onlineTime;
 	}
-	public ActiveState(String _id, String activeId, Date latestStatistical, int onlineTime) {
+	public ActiveState(String _id, String activeId, Date latestStatistical, long onlineTime) {
 		super();
 		this._id = _id;
 		this.activeId = activeId;
@@ -60,7 +60,4 @@ public class ActiveState implements Serializable{
 		super();
 	}
 	
-	
-	
-
 }
