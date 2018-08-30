@@ -71,7 +71,7 @@ public class OpenidInfoServiceImpl implements OpenidInfoService {
 		query.addCriteria(Criteria.where("openid").is(openid));
 		OpenidInfo result = operationMongoTemplate.findOne(query, OpenidInfo.class);
 		if (!StringUtils.isEmpty(result)) {
-			return true; // 存在openID 更新
+			return true; // 存在  更新
 		}
 		return false; // 不存在 插入
 	}

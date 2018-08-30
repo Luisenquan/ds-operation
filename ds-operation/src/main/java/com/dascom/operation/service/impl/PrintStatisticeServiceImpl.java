@@ -171,34 +171,4 @@ public class PrintStatisticeServiceImpl implements PrintStatisticeService{
 		return resultMap;
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
