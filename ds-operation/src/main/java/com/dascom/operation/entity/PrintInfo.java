@@ -10,15 +10,15 @@ public class PrintInfo implements Serializable{
 	private static final long serialVersionUID = -8548949244029285132L;
 	
 	@Field("print_date")
-	private Date printDate;
+	private String printDate;
 	@Field("print_succed")
 	private int printSucced;
 	@Field("print_fail")
 	private int printFail;
-	public Date getPrintDate() {
+	public String getPrintDate() {
 		return printDate;
 	}
-	public void setPrintDate(Date printDate) {
+	public void setPrintDate(String printDate) {
 		this.printDate = printDate;
 	}
 	public int getPrintSucced() {
@@ -33,7 +33,7 @@ public class PrintInfo implements Serializable{
 	public void setPrintFail(int printFail) {
 		this.printFail = printFail;
 	}
-	public PrintInfo(Date printDate, int printSucced, int printFail) {
+	public PrintInfo(String printDate, int printSucced, int printFail) {
 		super();
 		this.printDate = printDate;
 		this.printSucced = printSucced;
@@ -42,6 +42,7 @@ public class PrintInfo implements Serializable{
 	public PrintInfo() {
 		super();
 	}
+	
 	
 	
 

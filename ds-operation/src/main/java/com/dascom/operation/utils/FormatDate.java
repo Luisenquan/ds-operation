@@ -1,5 +1,10 @@
 package com.dascom.operation.utils;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 /**
  * 格式化时间
  * 
@@ -21,5 +26,11 @@ public class FormatDate {
 		long seconds = (time % (1000 * 60)) / 1000;
 		return days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";
 	}
-
+	
+	public static String getTheDate() {
+		Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+		return sdf.format(date);
+	}
+	
 }

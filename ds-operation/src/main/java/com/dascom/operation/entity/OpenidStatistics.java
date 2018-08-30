@@ -19,7 +19,7 @@ public class OpenidStatistics implements Serializable{
 	@Field("print_info")
 	private List<PrintInfo> printInfo;
 	@Field("first_using")
-	private Date firstUsing;
+	private String firstUsing;
 	public String getId() {
 		return id;
 	}
@@ -38,13 +38,13 @@ public class OpenidStatistics implements Serializable{
 	public void setPrintInfo(List<PrintInfo> printInfo) {
 		this.printInfo = printInfo;
 	}
-	public Date getFirstUsing() {
+	public String getFirstUsing() {
 		return firstUsing;
 	}
-	public void setFirstUsing(Date firstUsing) {
+	public void setFirstUsing(String firstUsing) {
 		this.firstUsing = firstUsing;
 	}
-	public OpenidStatistics(String id, String openid, List<PrintInfo> printInfo, Date firstUsing) {
+	public OpenidStatistics(String id, String openid, List<PrintInfo> printInfo, String firstUsing) {
 		super();
 		this.id = id;
 		this.openid = openid;
