@@ -1,59 +1,77 @@
 package com.dascom.operation.entity;
 
 import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
-@Document(collection="collection_openid_statistics")
-public class OpenidStatistics implements Serializable{
+@Document(collection = "collection_openid_statistics")
+public class OpenidStatistics implements Serializable {
 
-	private static final long serialVersionUID = 8144994616314554094L;
+	private static final long serialVersionUID = -1050265532084997688L;
 	
 	@Id
 	private String id;
-	private String openid;
-	@Field("print_info")
-	private List<PrintInfo> printInfo;
-	@Field("first_using")
-	private String firstUsing;
+	@Field("statistics_date")
+	private String statisticsDate;
+	@Field("statistics_success")
+	private int statisticsSuccess;
+	@Field("statistics_fail")
+	private int statisticsFail;
+	@Field("total_openid")
+	private int totalOpenid;
+
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getOpenid() {
-		return openid;
+
+	public String getStatisticsDate() {
+		return statisticsDate;
 	}
-	public void setOpenid(String openid) {
-		this.openid = openid;
+
+	public void setStatisticsDate(String statisticsDate) {
+		this.statisticsDate = statisticsDate;
 	}
-	public List<PrintInfo> getPrintInfo() {
-		return printInfo;
+
+	public int getStatisticsSuccess() {
+		return statisticsSuccess;
 	}
-	public void setPrintInfo(List<PrintInfo> printInfo) {
-		this.printInfo = printInfo;
+
+	public void setStatisticsSuccess(int statisticsSuccess) {
+		this.statisticsSuccess = statisticsSuccess;
 	}
-	public String getFirstUsing() {
-		return firstUsing;
+
+	public int getStatisticsFail() {
+		return statisticsFail;
 	}
-	public void setFirstUsing(String firstUsing) {
-		this.firstUsing = firstUsing;
+
+	public void setStatisticsFail(int statisticsFail) {
+		this.statisticsFail = statisticsFail;
 	}
-	public OpenidStatistics(String id, String openid, List<PrintInfo> printInfo, String firstUsing) {
+
+	public int getTotalOpenid() {
+		return totalOpenid;
+	}
+
+	public void setTotalOpenid(int totalOpenid) {
+		this.totalOpenid = totalOpenid;
+	}
+
+	public OpenidStatistics(String statisticsDate, int statisticsSuccess, int statisticsFail, int totalOpenid) {
 		super();
-		this.id = id;
-		this.openid = openid;
-		this.printInfo = printInfo;
-		this.firstUsing = firstUsing;
+		this.statisticsDate = statisticsDate;
+		this.statisticsSuccess = statisticsSuccess;
+		this.statisticsFail = statisticsFail;
+		this.totalOpenid = totalOpenid;
 	}
+
 	public OpenidStatistics() {
 		super();
 	}
-
 
 }

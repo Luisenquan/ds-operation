@@ -10,23 +10,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.fastjson.JSONObject;
-import com.dascom.operation.entity.OpenidStatistics;
-import com.dascom.operation.service.OpenidStatisticsService;
+import com.dascom.operation.entity.OpenidInfo;
+import com.dascom.operation.service.OpenidInfoService;
 
 @RestController
 public class OpenidController {
 	
 	@Autowired
-	private OpenidStatisticsService openidService;
+	private OpenidInfoService openidInfoService;
 	
 	@RequestMapping("getOpenid")
-	public List<OpenidStatistics> getAll(){
-		return openidService.getAll();
+	public List<OpenidInfo> getAll(){
+		return openidInfoService.getAll();
 	}
 	
 	@RequestMapping("getOpenidNowDay")
-	public List<OpenidStatistics> getNowDay(){
-		return openidService.fetchByNowDay();
+	public List<OpenidInfo> getNowDay(){
+		return openidInfoService.fetchByNowDay();
 	}
 	
 	
@@ -36,13 +36,13 @@ public class OpenidController {
 		String openid = (String)obj.get("openid");
 		int printSucced = (int) obj.get("success");
 		int printFail = (int) obj.get("fail");
-		boolean check = openidService.checkOpenid(openid);
+		boolean check = openidInfoService.checkOpenid(openid);
 		if(check) {
 			//更新
-			openidService.update(openid, printSucced, printFail);
+			openidInfoService.update(openid, printSucced, printFail);
 		}else {
 			//插入
-			openidService.add(openid, printSucced, printFail);
+			openidInfoService.add(openid, printSucced, printFail);
 		}
 	}
 
