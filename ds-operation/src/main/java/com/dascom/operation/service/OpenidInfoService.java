@@ -21,5 +21,7 @@ public interface OpenidInfoService {
 	
 	//查询当前日期的所有openId
 	List<OpenidInfo> fetchByNowDay();
+	
+	
 
 }

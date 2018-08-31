@@ -1,0 +1,60 @@
+/* 1 */
+{
+    "_id" : ObjectId("5b8507ba78596266bc7a85f4"),
+    "openid" : "123456",
+    "print_info" : [ 
+        {
+            "print_date" : "20180828",
+            "print_succed" : 15,
+            "print_fail" : 0
+        }, 
+        {
+            "print_date" : "20180830",
+            "print_succed" : 30,
+            "print_fail" : 0
+        }
+    ],
+    "first_using" : "20180828"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5b874d923a1b3f87e6f4b078"),
+    "openid" : "789456",
+    "print_info" : [ 
+        {
+            "print_date" : "20180830",
+            "print_succed" : 1,
+            "print_fail" : 0
+        }
+    ],
+    "first_using" : "20180829"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5b8757e86705282de0cbc1b0"),
+    "openid" : "aaaaaa",
+    "print_info" : [ 
+        {
+            "print_date" : "20180830",
+            "print_succed" : 20,
+            "print_fail" : 20
+        }
+    ],
+    "first_using" : "20180830"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5b87615a6705282de0cbc1ea"),
+    "openid" : "qwerty",
+    "print_info" : [ 
+        {
+            "print_date" : "20180830",
+            "print_succed" : 40,
+            "print_fail" : 80
+        }
+    ],
+    "first_using" : "20180830"
+}
