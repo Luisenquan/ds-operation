@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.alibaba.fastjson.JSONObject;
 import com.dascom.operation.entity.OpenidInfo;
 import com.dascom.operation.service.OpenidInfoService;
-import com.dascom.operation.service.OpenidStatisticsService;
+
 
 @RestController
 public class OpenidController {
@@ -20,8 +20,7 @@ public class OpenidController {
 	@Autowired
 	private OpenidInfoService openidInfoService;
 	
-	@Autowired
-	private OpenidStatisticsService openidStatisticsService;
+	
 	
 	@RequestMapping("getOpenid")
 	public List<OpenidInfo> getAll(){
@@ -50,10 +49,10 @@ public class OpenidController {
 		}
 	}
 	
-	//获取printDate为20180830的信息
-	@RequestMapping("getPrintDate")
-	public void getPrintDate(){
-		openidStatisticsService.getList();
+	
+	@RequestMapping("newOpenidByDay")
+	public void newOpenidByDay() {
+		openidInfoService.newOpenidByDay();
 	}
-
+	
 }

@@ -158,8 +158,6 @@ public class PrintStatisticeServiceImpl implements PrintStatisticeService{
 			DBObject obj = getResult(agg);
 			
 			String result = JSON.toJSONString(obj);
-			//String resultInfo = !result.equals("null")?result:"本月没有打印记录！";
-			//resultMap.put(i+"月", resultInfo);
 			if(result.equals("null")){
 				resultMap.put(i+"月", 0);
 			}else{

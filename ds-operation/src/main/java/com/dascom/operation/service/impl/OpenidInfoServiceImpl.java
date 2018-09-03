@@ -1,20 +1,26 @@
 package com.dascom.operation.service.impl;
 
 import java.util.ArrayList;
+
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
+
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
+import com.alibaba.fastjson.JSON;
 import com.dascom.operation.entity.OpenidInfo;
 import com.dascom.operation.entity.PrintInfo;
 import com.dascom.operation.service.OpenidInfoService;
+import com.dascom.operation.utils.AggreationWithResult;
 import com.dascom.operation.utils.FormatDate;
+import com.mongodb.DBObject;
 
 @Component("openidInfoService")
 public class OpenidInfoServiceImpl implements OpenidInfoService {
@@ -35,19 +41,19 @@ public class OpenidInfoServiceImpl implements OpenidInfoService {
 		query.addCriteria(Criteria.where("openid").is(openid));
 		OpenidInfo openidStatistics = (OpenidInfo) operationMongoTemplate.findOne(query,
 				OpenidInfo.class);
-		List<PrintInfo> list = openidStatistics.getPrintInfo();
+		List<PrintInfo> list = openidStatistics.getPrint_info();
 		PrintInfo info = list.get(list.size() - 1);
-		 if(printDate.equals(info.getPrintDate())) {
+		 if(printDate.equals(info.getPrint_date())) {
 			//更新成功和失败次数
-			 info.setPrintSucced(info.getPrintSucced()+succed);
-			 info.setPrintFail(info.getPrintFail()+fail);
+			 info.setPrint_succed(info.getPrint_succed()+succed);
+			 info.setPrint_fail(info.getPrint_fail()+fail);
 			 list.set(list.size()-1, info);
 		 }else {
 			 //添加一条记录
 			 PrintInfo addInfo = new PrintInfo(printDate, succed, fail);
 			 list.add(addInfo);
 		 }
-		 Update update = new Update(); update.set("printInfo",list); 
+		 Update update = new Update(); update.set("print_info",list); 
 		 operationMongoTemplate.updateFirst(query, update,
 				 OpenidInfo.class);
 		 
@@ -80,9 +86,25 @@ public class OpenidInfoServiceImpl implements OpenidInfoService {
 	public List<OpenidInfo> fetchByNowDay() {
 		String nowDay = FormatDate.getTheDate();
 		Query query = new Query();
-		query.addCriteria(Criteria.where("firstUsing").is(nowDay));
+		query.addCriteria(Criteria.where("first_using").is("20180830"));
 		return operationMongoTemplate.find(query, OpenidInfo.class);
 	}
+
+	@Override
+	public void newOpenidByDay() {
+		Aggregation agg = Aggregation.newAggregation(
+				Aggregation.unwind("print_info"),
+				Aggregation.match(Criteria.where("print_info.print_date").is("20180830")),
+				Aggregation.group("print_date").sum("print_info.print_succed").as("success").sum("print_info.print_fail").as("fail")
+				);
+		//"collection_openid_info"
+		AggreationWithResult result = new AggreationWithResult();
+		DBObject obj = result.getResult(agg, operationMongoTemplate, "collection_openid_info");
+		System.out.println(JSON.toJSON(obj));
+		
+	}
+
+	
 	
 	
 	

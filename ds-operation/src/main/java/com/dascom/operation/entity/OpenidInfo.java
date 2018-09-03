@@ -16,10 +16,8 @@ public class OpenidInfo implements Serializable{
 	@Id
 	private String id;
 	private String openid;
-	@Field("print_info")
-	private List<PrintInfo> printInfo;
-	@Field("first_using")
-	private String firstUsing;
+	private List<PrintInfo> print_info;
+	private String first_using;
 	public String getId() {
 		return id;
 	}
@@ -32,28 +30,30 @@ public class OpenidInfo implements Serializable{
 	public void setOpenid(String openid) {
 		this.openid = openid;
 	}
-	public List<PrintInfo> getPrintInfo() {
-		return printInfo;
+	public List<PrintInfo> getPrint_info() {
+		return print_info;
 	}
-	public void setPrintInfo(List<PrintInfo> printInfo) {
-		this.printInfo = printInfo;
+	public void setPrint_info(List<PrintInfo> print_info) {
+		this.print_info = print_info;
 	}
-	public String getFirstUsing() {
-		return firstUsing;
+	public String getFirst_using() {
+		return first_using;
 	}
-	public void setFirstUsing(String firstUsing) {
-		this.firstUsing = firstUsing;
+	public void setFirst_using(String first_using) {
+		this.first_using = first_using;
 	}
-	public OpenidInfo(String id, String openid, List<PrintInfo> printInfo, String firstUsing) {
+	public OpenidInfo(String id, String openid, List<PrintInfo> print_info, String first_using) {
 		super();
 		this.id = id;
 		this.openid = openid;
-		this.printInfo = printInfo;
-		this.firstUsing = firstUsing;
+		this.print_info = print_info;
+		this.first_using = first_using;
 	}
 	public OpenidInfo() {
 		super();
 	}
+	
+	
 
 
 }
