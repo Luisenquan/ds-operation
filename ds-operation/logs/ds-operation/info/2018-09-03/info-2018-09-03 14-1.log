@@ -1,0 +1,71 @@
+2018-09-03 14:05:57 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:05:57 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:06:04 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 14:06:04 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/newOpenidByDay
+2018-09-03 14:06:04 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 14:06:04 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 14:06:04 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 14:06:42 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:06:42 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:06:45 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 14:06:45 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/newOpenidByDay
+2018-09-03 14:06:45 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 14:06:45 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 14:06:45 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 14:10:16 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:10:16 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:12:32 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:12:32 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:12:41 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 14:12:41 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/insertStatistics
+2018-09-03 14:12:41 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 14:12:41 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 14:12:41 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 14:28:15 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:28:15 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:30:11 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:30:11 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:30:53 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:30:53 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:33:04 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:33:04 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:42:01 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:42:01 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:42:11 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 14:42:11 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/insertStatistics
+2018-09-03 14:42:11 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 14:42:11 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 14:42:11 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 14:43:04 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:43:04 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:43:11 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 14:43:11 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/insertStatistics
+2018-09-03 14:43:11 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 14:43:11 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 14:43:11 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 14:48:39 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:48:39 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:51:43 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:51:43 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:52:21 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:52:21 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:52:41 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:52:41 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:53:20 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:53:20 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:53:32 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:53:32 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:53:44 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 14:53:44 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/insertStatistics
+2018-09-03 14:53:44 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 14:53:44 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 14:53:44 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 14:55:26 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:55:26 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:56:29 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 14:56:29 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 14:56:33 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 14:56:33 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOpenidStatisticsList
+2018-09-03 14:56:33 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 14:56:33 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 14:56:33 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

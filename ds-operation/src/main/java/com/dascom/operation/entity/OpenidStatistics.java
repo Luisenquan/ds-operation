@@ -19,8 +19,28 @@ public class OpenidStatistics implements Serializable {
 	private int statisticsSuccess;
 	@Field("statistics_fail")
 	private int statisticsFail;
+	@Field("print_total")
+	private int printTotal;
+	public int getPrintTotal() {
+		return printTotal;
+	}
+
+	public void setPrintTotal(int printTotal) {
+		this.printTotal = printTotal;
+	}
+
 	@Field("total_openid")
 	private int totalOpenid;
+	@Field("new_openid")
+	private int newOpenid;
+
+	public int getNewOpenid() {
+		return newOpenid;
+	}
+
+	public void setNewOpenid(int newOpenid) {
+		this.newOpenid = newOpenid;
+	}
 
 	public String getId() {
 		return id;
@@ -62,12 +82,19 @@ public class OpenidStatistics implements Serializable {
 		this.totalOpenid = totalOpenid;
 	}
 
-	public OpenidStatistics(String statisticsDate, int statisticsSuccess, int statisticsFail, int totalOpenid) {
+	
+
+	
+
+	public OpenidStatistics(String statisticsDate, int statisticsSuccess, int statisticsFail, int printTotal,
+			int totalOpenid, int newOpenid) {
 		super();
 		this.statisticsDate = statisticsDate;
 		this.statisticsSuccess = statisticsSuccess;
 		this.statisticsFail = statisticsFail;
+		this.printTotal = printTotal;
 		this.totalOpenid = totalOpenid;
+		this.newOpenid = newOpenid;
 	}
 
 	public OpenidStatistics() {

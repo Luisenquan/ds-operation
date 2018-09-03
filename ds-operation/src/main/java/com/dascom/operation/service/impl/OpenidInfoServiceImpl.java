@@ -93,9 +93,8 @@ public class OpenidInfoServiceImpl implements OpenidInfoService {
 	@Override
 	public void newOpenidByDay() {
 		Aggregation agg = Aggregation.newAggregation(
-				Aggregation.unwind("print_info"),
-				Aggregation.match(Criteria.where("print_info.print_date").is("20180830")),
-				Aggregation.group("print_date").sum("print_info.print_succed").as("success").sum("print_info.print_fail").as("fail")
+				Aggregation.match(Criteria.where("first_using").is("20180829")),
+				Aggregation.group().count().as("当天总人数")
 				);
 		//"collection_openid_info"
 		AggreationWithResult result = new AggreationWithResult();
