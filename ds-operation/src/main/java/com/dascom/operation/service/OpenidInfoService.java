@@ -20,10 +20,10 @@ public interface OpenidInfoService {
 	void add(String openid,int succed,int fail);
 	
 	//查询当前日期的所有openId
-	List<OpenidInfo> fetchByNowDay();
+	//List<OpenidInfo> fetchByNowDay();
 	
 	//统计当前日期openid的新增人数
-	void newOpenidByDay();
+	//void newOpenidByDay();
 	
 	
 	

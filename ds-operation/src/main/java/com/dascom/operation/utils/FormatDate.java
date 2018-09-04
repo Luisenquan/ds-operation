@@ -26,13 +26,21 @@ public class FormatDate {
 		return days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";
 	}
 	
-	public static String getTheDate() {
+	
+	//查询统计日期
+	public static String statisticsDate() {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 		int yesterday = Integer.parseInt(sdf.format(date))-1;
 		return String.valueOf(yesterday);
 	}
 	
+	//插入数据日期
+	public static String getTheDate() {
+		Date date = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+		return sdf.format(date);
+	}
 	
 	
 }

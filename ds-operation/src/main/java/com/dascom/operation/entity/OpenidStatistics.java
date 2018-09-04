@@ -21,84 +21,76 @@ public class OpenidStatistics implements Serializable {
 	private int statisticsFail;
 	@Field("print_total")
 	private int printTotal;
-	public int getPrintTotal() {
-		return printTotal;
-	}
-
-	public void setPrintTotal(int printTotal) {
-		this.printTotal = printTotal;
-	}
-
 	@Field("total_openid")
 	private int totalOpenid;
+	@Field("today_openid")
+	private int todayOpenid;
 	@Field("new_openid")
 	private int newOpenid;
-
-	public int getNewOpenid() {
-		return newOpenid;
-	}
-
-	public void setNewOpenid(int newOpenid) {
-		this.newOpenid = newOpenid;
-	}
-
 	public String getId() {
 		return id;
 	}
-
 	public void setId(String id) {
 		this.id = id;
 	}
-
 	public String getStatisticsDate() {
 		return statisticsDate;
 	}
-
 	public void setStatisticsDate(String statisticsDate) {
 		this.statisticsDate = statisticsDate;
 	}
-
 	public int getStatisticsSuccess() {
 		return statisticsSuccess;
 	}
-
 	public void setStatisticsSuccess(int statisticsSuccess) {
 		this.statisticsSuccess = statisticsSuccess;
 	}
-
 	public int getStatisticsFail() {
 		return statisticsFail;
 	}
-
 	public void setStatisticsFail(int statisticsFail) {
 		this.statisticsFail = statisticsFail;
 	}
-
+	public int getPrintTotal() {
+		return printTotal;
+	}
+	public void setPrintTotal(int printTotal) {
+		this.printTotal = printTotal;
+	}
 	public int getTotalOpenid() {
 		return totalOpenid;
 	}
-
 	public void setTotalOpenid(int totalOpenid) {
 		this.totalOpenid = totalOpenid;
 	}
-
-	
-
-	
-
+	public int getTodayOpenid() {
+		return todayOpenid;
+	}
+	public void setTodayOpenid(int todayOpenid) {
+		this.todayOpenid = todayOpenid;
+	}
+	public int getNewOpenid() {
+		return newOpenid;
+	}
+	public void setNewOpenid(int newOpenid) {
+		this.newOpenid = newOpenid;
+	}
 	public OpenidStatistics(String statisticsDate, int statisticsSuccess, int statisticsFail, int printTotal,
-			int totalOpenid, int newOpenid) {
+			int totalOpenid, int todayOpenid, int newOpenid) {
 		super();
 		this.statisticsDate = statisticsDate;
 		this.statisticsSuccess = statisticsSuccess;
 		this.statisticsFail = statisticsFail;
 		this.printTotal = printTotal;
 		this.totalOpenid = totalOpenid;
+		this.todayOpenid = todayOpenid;
 		this.newOpenid = newOpenid;
 	}
-
 	public OpenidStatistics() {
 		super();
 	}
+	
+	
+
 
 }

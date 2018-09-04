@@ -3,6 +3,7 @@ package com.dascom.operation.service;
 import java.util.List;
 import java.util.Map;
 
+import com.dascom.operation.entity.OpenidPerMonth;
 import com.dascom.operation.entity.OpenidStatistics;
 
 public interface OpenidStatisticsService {
@@ -15,6 +16,6 @@ public interface OpenidStatisticsService {
 	List<OpenidStatistics> getOpenidStatisticsList();
 	
 	//统计每月openid新增数
-	Map<String, Object> monthlyStatistics();
+	List<OpenidPerMonth> monthlyStatistics();
 
 }

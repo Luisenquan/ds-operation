@@ -7,6 +7,8 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSONObject;
 import com.dascom.operation.entity.OpenidInfo;
+import com.dascom.operation.entity.OpenidPerMonth;
 import com.dascom.operation.entity.OpenidStatistics;
 import com.dascom.operation.service.OpenidInfoService;
 import com.dascom.operation.service.OpenidStatisticsService;
@@ -23,23 +26,14 @@ import com.dascom.operation.service.OpenidStatisticsService;
 @RestController
 public class OpenidController {
 	
+	private static final Logger logger = LogManager.getLogger(OpenidController.class);
+	
 	@Autowired
 	private OpenidInfoService openidInfoService;
 	
 	@Autowired
 	private OpenidStatisticsService openidStatisticsService;
 	
-	
-	
-	@RequestMapping("getOpenid")
-	public List<OpenidInfo> getAll(){
-		return openidInfoService.getAll();
-	}
-	
-	@RequestMapping("getOpenidNowDay")
-	public List<OpenidInfo> getNowDay(){
-		return openidInfoService.fetchByNowDay();
-	}
 	
 	
 	
@@ -52,27 +46,32 @@ public class OpenidController {
 		if(check) {
 			//更新
 			openidInfoService.update(openid, printSucced, printFail);
+			logger.info("------更新成功------");
+			logger.info("----更新----openid="+openid+",insertSuccess="+printSucced+",insertFail="+printFail);
 		}else {
 			//插入
 			openidInfoService.add(openid, printSucced, printFail);
+			logger.info("------新增成功------");
+			logger.info("----新增----openid="+openid+",addSuccess="+printSucced+",addFail="+printFail);
 		}
 	}
 	
 	
-	@RequestMapping("newOpenidByDay")
-	public void newOpenidByDay() {
-		openidInfoService.newOpenidByDay();
-	}
 	
 	
+	//获取当前
 	@RequestMapping("getOpenidStatisticsList")
 	public List<OpenidStatistics> getOpenidStatisticsList() {
+		//先统计openid_info
 		openidStatisticsService.insertStatistics();
+		//返回查询数据
 		return openidStatisticsService.getOpenidStatisticsList();
 	}
 	
+	
+	//按月查询统计
 	@RequestMapping("monthlyStatistics")
-	public Map<String,Object> monthlyStatistics(){
+	public List<OpenidPerMonth> monthlyStatistics(){
 		return openidStatisticsService.monthlyStatistics();
 	}
 	

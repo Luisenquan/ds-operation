@@ -1,288 +1,38 @@
-2018-09-04 14:00:12 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:00:12 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:00:17 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:00:17 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:00:17 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:00:17 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:00:17 INFO [ActiveStateServiceImpl.java:65] - {"Content-Type":"application/json"}
-2018-09-04 14:00:17 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:02:23 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:02:23 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:02:34 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:02:34 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:02:34 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:02:34 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:02:34 INFO [ActiveStateServiceImpl.java:65] - {Content-Type:application/json}
-2018-09-04 14:02:34 INFO [HttpClientUtils.java:130] - com.alibaba.fastjson.JSONException: expect ':' at 0, actual -
-2018-09-04 14:03:20 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:03:20 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:03:29 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:03:29 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:03:29 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:03:29 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:03:29 INFO [ActiveStateServiceImpl.java:65] - {"Content-Type":"application/json"}
-2018-09-04 14:03:29 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:04:28 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:04:28 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
-2018-09-04 14:04:28 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:04:28 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:04:28 INFO [OperationController.java:67] - ------从redis中读取数据！------
-2018-09-04 14:04:28 INFO [OperationController.java:76] - 总耗时：386
-2018-09-04 14:04:28 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:11:51 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:11:51 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:12:02 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:12:02 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:12:02 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:12:02 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:12:22 INFO [ActiveStateServiceImpl.java:65] - {"Content-Type":"application/json"}
-2018-09-04 14:15:28 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:15:28 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:15:38 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:15:38 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:15:38 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:15:38 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:15:54 INFO [ActiveStateServiceImpl.java:65] - {"Content-Type":"application/json"}
-2018-09-04 14:24:06 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:24:06 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:24:21 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:24:21 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:24:21 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:24:21 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:24:21 INFO [ActiveStateServiceImpl.java:65] - {"id":"ea1599d2-d2c7-467a-bde2-e42a35b0102c"}
-2018-09-04 14:24:21 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:24:21 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:24:21 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:26:06 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:26:06 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:26:29 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:26:29 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive/0
-2018-09-04 14:26:29 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:26:29 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:26:29 INFO [ActiveStateServiceImpl.java:65] - {"id":"c87ed778-7437-4346-becb-d866000425a3"}
-2018-09-04 14:26:29 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:26:29 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:26:29 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:26:34 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:26:34 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive/30
-2018-09-04 14:26:34 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:26:34 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:26:34 INFO [ActiveStateServiceImpl.java:65] - {"id":"54e9fb40-99e9-4219-852e-3570217d59c3"}
-2018-09-04 14:26:34 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:26:34 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:26:34 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:27:15 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:27:15 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive/3
-2018-09-04 14:27:15 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:27:15 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:27:15 INFO [ActiveStateServiceImpl.java:65] - {"id":"e03e6366-4bf2-45e3-a178-8c347b738ff6"}
-2018-09-04 14:27:15 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:27:15 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:27:15 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:32:19 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:32:19 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:32:30 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:32:30 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:32:30 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:32:30 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:32:30 INFO [ActiveStateServiceImpl.java:65] - {"id":"ab7df4c9-3a9f-4b29-b570-619f8d8fe354"}
-2018-09-04 14:32:30 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:32:30 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:32:30 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:32:40 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:32:40 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:32:40 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:32:40 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:32:40 INFO [WebLogAspect.java:48] - 参数:time,值:2
-2018-09-04 14:32:40 INFO [ActiveStateServiceImpl.java:65] - {"id":"ebd04156-60b3-444e-9460-673e93019adc"}
-2018-09-04 14:32:40 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:32:40 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:32:41 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:32:46 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:32:46 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:32:46 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:32:46 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:32:46 INFO [WebLogAspect.java:48] - 参数:time,值:1.5
-2018-09-04 14:32:46 INFO [ActiveStateServiceImpl.java:65] - {"id":"074fc300-e471-4dff-a23a-6176e478e6ee"}
-2018-09-04 14:32:46 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:32:47 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:32:47 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:32:50 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:32:50 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:32:50 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:32:50 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:32:50 INFO [WebLogAspect.java:48] - 参数:time,值:1
-2018-09-04 14:32:50 INFO [ActiveStateServiceImpl.java:65] - {"id":"3792f2cf-cadc-46e4-9881-c77e6e7e27c0"}
-2018-09-04 14:32:50 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:32:50 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:32:50 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:32:56 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:32:56 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:32:56 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:32:56 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:32:56 INFO [WebLogAspect.java:48] - 参数:time,值:0.5
-2018-09-04 14:32:56 INFO [ActiveStateServiceImpl.java:65] - {"id":"aa06b6df-6cc5-4876-974b-ef7c82772232"}
-2018-09-04 14:32:56 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:32:56 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:32:56 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:33:01 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:33:01 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:33:01 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:33:01 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:33:01 INFO [WebLogAspect.java:48] - 参数:time,值:0
-2018-09-04 14:33:01 INFO [ActiveStateServiceImpl.java:65] - {"id":"95696849-acec-40d8-b9bb-b1759defa0c1"}
-2018-09-04 14:33:01 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:33:01 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:33:01 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:33:10 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:33:10 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:33:10 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:33:10 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:33:10 INFO [WebLogAspect.java:48] - 参数:time,值:0
-2018-09-04 14:33:10 INFO [ActiveStateServiceImpl.java:65] - {"id":"4d321fac-79ce-41f7-9e89-fc0cfbb6e283"}
-2018-09-04 14:33:10 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:33:10 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:33:10 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:34:15 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:34:15 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:34:42 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:34:42 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:34:52 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:34:52 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:34:52 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:34:52 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:34:52 INFO [WebLogAspect.java:48] - 参数:time,值:0
-2018-09-04 14:34:52 INFO [ActiveStateServiceImpl.java:65] - {"id":"dcd5441e-8936-4f8d-ab12-3806729c89e6"}
-2018-09-04 14:34:52 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:34:52 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:35:11 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:35:11 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:35:31 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:35:31 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:35:31 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:35:31 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:35:31 INFO [WebLogAspect.java:48] - 参数:time,值:1
-2018-09-04 14:35:31 INFO [ActiveStateServiceImpl.java:65] - {"id":"88f76cbc-9383-4a83-b7bf-3d30b899c631"}
-2018-09-04 14:35:31 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:35:32 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:36:57 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:36:57 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:37:07 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:37:07 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:37:07 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:37:07 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:37:07 INFO [WebLogAspect.java:48] - 参数:time,值:1
-2018-09-04 14:37:07 INFO [ActiveStateServiceImpl.java:65] - {"id":"b506f533-a2cd-481c-9b30-e92fd7a158b9"}
-2018-09-04 14:37:07 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:37:07 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:37:58 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:37:58 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:38:06 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:38:06 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:38:06 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:38:06 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:38:06 INFO [WebLogAspect.java:48] - 参数:time,值:1
-2018-09-04 14:38:06 INFO [ActiveStateServiceImpl.java:65] - {"id":"e03895ff-2213-4020-81da-4ea698af0e14"}
-2018-09-04 14:38:06 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:38:06 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:38:06 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:38:15 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:38:15 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:38:15 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:38:15 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:38:15 INFO [WebLogAspect.java:48] - 参数:time,值:0.5
-2018-09-04 14:38:15 INFO [ActiveStateServiceImpl.java:65] - {"id":"018f0160-7db3-468d-af46-313316f747f7"}
-2018-09-04 14:38:15 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:38:15 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:38:15 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:38:22 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:38:22 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActive
-2018-09-04 14:38:22 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:38:22 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:38:22 INFO [WebLogAspect.java:48] - 参数:time,值:1.5
-2018-09-04 14:38:22 INFO [ActiveStateServiceImpl.java:65] - {"id":"a70e9193-56ae-402b-bfa6-e44d87a5e53b"}
-2018-09-04 14:38:22 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:38:22 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:38:22 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:40:03 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:40:03 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:40:27 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:40:27 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:42:46 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:42:46 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-04 14:42:46 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:42:46 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:42:46 INFO [ActiveStateServiceImpl.java:65] - {"id":"292180d1-52b0-4794-b4c5-ff816d24e367"}
-2018-09-04 14:42:46 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:42:46 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:42:46 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:44:12 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:44:12 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-04 14:44:12 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:44:12 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:44:12 INFO [WebLogAspect.java:48] - 参数:time,值:1.5
-2018-09-04 14:44:12 INFO [ActiveStateServiceImpl.java:65] - {"id":"5955850b-95a4-4c55-aa56-3671607abb70"}
-2018-09-04 14:44:12 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:44:12 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:44:12 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:44:17 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:44:17 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-04 14:44:17 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:44:17 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:44:17 INFO [WebLogAspect.java:48] - 参数:time,值:1
-2018-09-04 14:44:17 INFO [ActiveStateServiceImpl.java:65] - {"id":"35edcb2d-2aa8-492d-bb94-6c5254634cb4"}
-2018-09-04 14:44:17 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:44:17 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:44:17 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:45:27 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:45:27 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:45:44 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:45:44 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice/1
-2018-09-04 14:45:44 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:45:44 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:45:44 INFO [ActiveStateServiceImpl.java:65] - {"id":"58402ce6-723a-4d35-b903-1d890b4cc1b3"}
-2018-09-04 14:45:44 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:45:44 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:45:44 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:47:37 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:47:37 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:47:49 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:47:49 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice/0
-2018-09-04 14:47:49 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:47:49 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:47:49 INFO [ActiveStateServiceImpl.java:65] - {"id":"782bbf86-cdc7-4bb3-9b6f-d7eb5a029bac"}
-2018-09-04 14:47:49 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:47:49 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:47:49 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:47:53 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:47:53 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice/1
-2018-09-04 14:47:53 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:47:53 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:47:53 INFO [ActiveStateServiceImpl.java:65] - {"id":"535b2f84-2650-4fda-8555-1da160617564"}
-2018-09-04 14:47:53 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:47:53 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:47:53 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:49:43 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-04 14:49:43 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
-2018-09-04 14:49:50 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:49:50 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-04 14:49:50 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:49:50 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:49:50 INFO [ActiveStateServiceImpl.java:65] - {"id":"d1ee8337-4f78-4fd7-8871-19100796777d"}
-2018-09-04 14:49:50 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:49:50 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:49:51 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:50:03 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:50:03 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-04 14:50:03 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:50:03 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:50:03 INFO [WebLogAspect.java:48] - 参数:time,值:1
-2018-09-04 14:50:03 INFO [ActiveStateServiceImpl.java:65] - {"id":"fe940542-ee26-40fd-a9b9-2b3b32f4c905"}
-2018-09-04 14:50:03 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-04 14:50:03 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-04 14:50:03 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-04 14:50:23 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-04 14:50:23 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getNowDay
-2018-09-04 14:50:23 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-04 14:50:23 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-04 14:50:23 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 17:06:22 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-04 17:06:22 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-04 17:06:35 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-04 17:06:35 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-04 17:07:00 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-04 17:07:00 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-04 17:07:10 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 17:07:10 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/monthlyStatistics
+2018-09-04 17:07:10 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-04 17:07:10 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 17:08:20 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-04 17:08:20 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-04 17:08:20 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 17:08:20 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/monthlyStatistics
+2018-09-04 17:08:20 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-04 17:08:20 INFO [WebLogAspect.java:44] - IP : 127.0.0.1
+2018-09-04 17:08:21 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 17:10:04 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-04 17:10:04 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-04 17:10:11 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 17:10:11 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/monthlyStatistics
+2018-09-04 17:10:11 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-04 17:10:11 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 17:10:11 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 17:10:26 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-04 17:10:26 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-04 17:10:31 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 17:10:31 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/monthlyStatistics
+2018-09-04 17:10:31 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-04 17:10:31 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 17:10:31 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 17:12:59 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-04 17:12:59 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-04 17:13:12 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 17:13:12 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/monthlyStatistics
+2018-09-04 17:13:12 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-04 17:13:12 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 17:13:12 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
