@@ -27,6 +27,7 @@ public class InterfaceServiceImpl implements InterfaceService{
 	@Override
 	public void addInterface(CollectionInterface inter) {
 		operationMongoTemplate.insert(inter);
+		
 	}
 
 }

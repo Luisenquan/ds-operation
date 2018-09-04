@@ -5,12 +5,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.mongodb.core.CollectionOptions;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSONObject;
@@ -19,12 +22,14 @@ import com.dascom.operation.service.InterfaceService;
 import com.dascom.operation.service.RedisService;
 import com.dascom.operation.utils.MongoJoinPara;
 import com.dascom.operation.utils.RedisJoinPara;
+import com.dascom.operation.utils.ResultVOUtil;
+import com.dascom.operation.vo.ResultVO;
 
 
 @RestController
-public class QperationController {
+public class OperationController {
 	
-	private static final Logger logger = LogManager.getLogger(QperationController.class);
+	private static final Logger logger = LogManager.getLogger(OperationController.class);
 	
 	@Autowired
 	private InterfaceService interfaceService;
@@ -34,10 +39,6 @@ public class QperationController {
 	
 	
 	
-	@RequestMapping("localInterface")
-	public List<CollectionInterface> getLocalInterface(){
-		return interfaceService.getAllInterface();
-	}
 	
 	
 	/**
@@ -45,7 +46,7 @@ public class QperationController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping("getData")
+	@RequestMapping("getInterfaceData")
 	public List<Map<String,Object>> getData() throws Exception{
 		List<Map<String,Object>> resultList = new ArrayList<Map<String,Object>>();
 		long start = System.currentTimeMillis();
@@ -65,7 +66,6 @@ public class QperationController {
 		}else{
 			logger.info("------从redis中读取数据！------");
 			Map<String,Map<String,String>> resultMap = redisService.hgetByPipeline();
-			//Map<String,Map<Object,Object>> resultMap = redisService.testRedis();
 			for(String key:resultMap.keySet()){
 				Map<String,String> interMap = resultMap.get(key);
 				RedisJoinPara redisJoinPara = new RedisJoinPara();
@@ -78,10 +78,79 @@ public class QperationController {
 	}
 	
 	
-	@RequestMapping("addInter")
-	public void add(@RequestBody String inter) {
+	/**
+	 * 新增接口
+	 * @param inter
+	 * @throws Exception
+	 */
+	@RequestMapping(value="addInter",method=RequestMethod.POST)
+	public ResultVO add(@RequestBody String inter) throws Exception {
 		JSONObject interObj = JSONObject.parseObject(inter);
+		
+		if(!interObj.containsKey("interfaceName")) {
+			logger.info("缺少接口名称！");
+			return ResultVOUtil.error(1301);
+		}
+		
+		if(!interObj.containsKey("requestUrl")||!interObj.containsKey("method")) {
+			logger.info("缺少参数");
+			return ResultVOUtil.error(1301);
+		}
+		
+		
+		String requestUrl = interObj.get("requestUrl").toString();
+		String method = interObj.get("method").toString();
+		
+		String headerPara = interObj.containsKey("headerParameter")?interObj.get("headerParameter").toString():null;
+		String jsonPara = interObj.containsKey("jsonParameter")?interObj.get("headerParameter").toString():null;
+		String interfaceName = interObj.get("interfaceName").toString();
+		String note = interObj.containsKey("note")?interObj.get("headerParameter").toString():null;
+		
+		CollectionInterface addInter = new CollectionInterface(interfaceName, method, requestUrl, jsonPara, headerPara, note);
+		interfaceService.addInterface(addInter);
+		logger.info(addInter.toString());
+		logger.info("----新增接口----插入mongodb成功");
+		
+		redisService.copyData(addInter);
+		logger.info("----新增接口----插入redis成功");
+		return ResultVOUtil.success();
+		
+		
+		
+		
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

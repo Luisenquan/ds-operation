@@ -1,8 +1,7 @@
 package com.dascom.operation.utils;
 
-import java.text.ParseException;
+
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -30,7 +29,10 @@ public class FormatDate {
 	public static String getTheDate() {
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-		return sdf.format(date);
+		int yesterday = Integer.parseInt(sdf.format(date))-1;
+		return String.valueOf(yesterday);
 	}
+	
+	
 	
 }

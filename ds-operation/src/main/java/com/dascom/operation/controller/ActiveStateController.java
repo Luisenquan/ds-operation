@@ -37,11 +37,18 @@ public class ActiveStateController {
 	
 	@RequestMapping("getNowDay")
 	public List<ActiveState> nowDay(){
+		//activeStateService.getOnline();
 		return activeStateService.getByNowDay();
 	}
 	
-	@RequestMapping(value="getActive",method=RequestMethod.GET)
+	
+	//获取活跃设备（可按时长查询）
+	@RequestMapping(value="getActiveDevice",method=RequestMethod.GET)
 	public Map<String,String> getActive(@RequestParam(defaultValue="0") double time){
+		//请求统计设备时长接口
+		activeStateService.getOnline();
+		
+		//查询设备在线时长
 		Map<String,String>resultMap = new HashMap<String,String>();
 		List<ActiveState> actives = new ArrayList<ActiveState>();
 		if(time==0) {

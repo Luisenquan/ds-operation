@@ -1,15 +1,18 @@
 package com.dascom.operation.service.impl;
 
+import java.util.Calendar;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
+import com.alibaba.fastjson.JSON;
 import com.dascom.operation.entity.OpenidStatistics;
 import com.dascom.operation.service.OpenidStatisticsService;
 import com.dascom.operation.utils.AggreationWithResult;
@@ -65,6 +68,32 @@ public class OpenidStatisticsServiceImpl implements OpenidStatisticsService {
 	@Override
 	public List<OpenidStatistics> getOpenidStatisticsList() {
 		return operationMongoTemplate.findAll(OpenidStatistics.class);
+	}
+
+	@Override
+	public Map<String, Object> monthlyStatistics() {
+		Map<String,Object> resultMap = new HashMap<String,Object>();
+		//获取当前月份
+		Calendar cal = Calendar.getInstance();
+		int year = cal.get(Calendar.YEAR);
+		int month = cal.get(Calendar.MONTH)+1;
+		for(int i=1;i<=month;i++) {
+			String pat = i<10?year+"0"+i:year+i+"";
+			Aggregation agg = Aggregation.newAggregation(
+					Aggregation.match(Criteria.where("statistics_date").regex(pat)),
+					Aggregation.group().count().as("perMonth")
+					);
+			DBObject obj = result.getResult(agg, operationMongoTemplate, "collection_openid_statistics");
+			String str = JSON.toJSONString(obj);
+			if(str.equals("null")) {
+				resultMap.put(i+"月", "没有新增用户");
+			}else {
+				
+				resultMap.put(i+"月", Integer.parseInt(obj.get("perMonth").toString()));
+			}
+		}
+		
+		return resultMap;
 	}
 
 }

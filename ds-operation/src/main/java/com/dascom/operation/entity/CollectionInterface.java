@@ -61,10 +61,9 @@ public class CollectionInterface implements Serializable{
 	public void setNote(String note) {
 		this.note = note;
 	}
-	public CollectionInterface(String id, String interfaceName, String method, String requestUrl, String jsonParameter,
+	public CollectionInterface(String interfaceName, String method, String requestUrl, String jsonParameter,
 			String headerParameter, String note) {
 		super();
-		this.id = id;
 		this.interfaceName = interfaceName;
 		this.method = method;
 		this.requestUrl = requestUrl;
@@ -76,6 +75,11 @@ public class CollectionInterface implements Serializable{
 		super();
 	}
 	
+	@Override
+	public String toString() {
+		return "interfaceInfo[interfaceName="+interfaceName+",requestUrl="+requestUrl+",method="+method+",jsonParameter="+jsonParameter+
+				",headerParameter="+headerParameter+",note="+note+"]";
+	}
 	
 	
 	

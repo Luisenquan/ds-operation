@@ -2,6 +2,7 @@ package com.dascom.operation.controller;
 
 
 import java.util.List;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -68,6 +69,11 @@ public class OpenidController {
 	public List<OpenidStatistics> getOpenidStatisticsList() {
 		openidStatisticsService.insertStatistics();
 		return openidStatisticsService.getOpenidStatisticsList();
+	}
+	
+	@RequestMapping("monthlyStatistics")
+	public Map<String,Object> monthlyStatistics(){
+		return openidStatisticsService.monthlyStatistics();
 	}
 	
 }

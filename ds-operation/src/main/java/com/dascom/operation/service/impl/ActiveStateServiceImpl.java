@@ -44,7 +44,8 @@ public class ActiveStateServiceImpl implements ActiveStateService{
 		int year = cal.get(Calendar.YEAR);
 		int month = cal.get(Calendar.MONTH)+1;
 		int day = cal.get(Calendar.DAY_OF_MONTH);
-		String nowDate = month<10?year+"0"+month+day:year+month+day+"";
+		String nowDate = month<10?year+"0"+month:year+month+"";
+		nowDate = day<10?nowDate+"0"+day:nowDate+day;
 		Query query = new Query();
 		query.addCriteria(Criteria.where("activeId").regex(nowDate));
 		return cloudDeviceMongoTemplate.find(query, ActiveState.class);
@@ -60,7 +61,11 @@ public class ActiveStateServiceImpl implements ActiveStateService{
 	@Override
 	public void getOnline() {
 		String uuid= UUID.randomUUID().toString();
-		Map<String,Object> resultMap = HttpClientUtils.doPost(statisticsOnline, uuid, null);
+		String jsonPara = "{\"id\":\""+uuid+"\"}";
+		logger.info(jsonPara);
+		String headerPara = "{\"Content-Type\":\"application/json\"}";
+		logger.info(headerPara);
+		Map<String,Object> resultMap = HttpClientUtils.doPost(statisticsOnline, jsonPara, headerPara);
 		int statusCode = (int) resultMap.get("statusCode");
 		String resultLine = (String)resultMap.get("resultLine");
 		if(statusCode<400) {
@@ -77,7 +82,8 @@ public class ActiveStateServiceImpl implements ActiveStateService{
 		int year = cal.get(Calendar.YEAR);
 		int month = cal.get(Calendar.MONTH)+1;
 		int day = cal.get(Calendar.DAY_OF_MONTH);
-		String nowDate = month<10?year+"0"+month+day:year+month+day+"";
+		String nowDate = month<10?year+"0"+month:year+month+"";
+		nowDate = day<10?nowDate+"0"+day:nowDate+day;
 		//将时间转为毫秒
 		long ms = (long) (time*3600000);
 		Query query = new Query();
