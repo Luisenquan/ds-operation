@@ -16,6 +16,6 @@ public interface OpenidStatisticsService {
 	List<OpenidStatistics> getOpenidStatisticsList();
 	
 	//统计每月openid新增数
-	List<OpenidPerMonth> monthlyStatistics();
+	Map<String,Object> monthlyStatistics();
 
 }

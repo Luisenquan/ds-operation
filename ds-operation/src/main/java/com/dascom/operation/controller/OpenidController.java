@@ -71,7 +71,7 @@ public class OpenidController {
 	
 	//按月查询统计
 	@RequestMapping("monthlyStatistics")
-	public List<OpenidPerMonth> monthlyStatistics(){
+	public Map<String,Object> monthlyStatistics(){
 		return openidStatisticsService.monthlyStatistics();
 	}
 	

@@ -13,12 +13,12 @@ import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.stereotype.Component;
 
-import com.alibaba.fastjson.JSON;
+
 import com.dascom.operation.entity.OpenidPerMonth;
 import com.dascom.operation.entity.OpenidStatistics;
 import com.dascom.operation.service.OpenidStatisticsService;
 import com.dascom.operation.utils.AggreationWithResult;
-import com.dascom.operation.utils.FormatDate;
+
 import com.mongodb.DBObject;
 
 @Component("openidStatisticsService")
@@ -87,8 +87,8 @@ public class OpenidStatisticsServiceImpl implements OpenidStatisticsService {
 	
 	//按月获取openid统计数
 	@Override
-	public List<OpenidPerMonth> monthlyStatistics() {
-		List<OpenidPerMonth> resultList = new ArrayList<OpenidPerMonth>();
+	public Map<String,Object> monthlyStatistics() {
+		Map<String,Object> resultMap = new HashMap<String,Object>();
 		OpenidPerMonth openidPerMonth ;
 		//获取当前月份
 		Calendar cal = Calendar.getInstance();
@@ -100,12 +100,17 @@ public class OpenidStatisticsServiceImpl implements OpenidStatisticsService {
 			//统计当月使用的openid数
 			//统计当月新增的openid数
 			Aggregation agg = Aggregation.newAggregation(
-					Aggregation.match(Criteria.where("statisticsDate").is(pat)),
-					Aggregation.group().sum("todayOpenid").as("todayOpenid").sum("newOpenid").as("newOpenid")
+					Aggregation.match(Criteria.where("statistics_date").regex(pat)),
+					Aggregation.group().sum("today_openid").as("todayOpenid").sum("new_openid").as("newOpenid")
 					);
 			DBObject obj = result.getResult(agg, operationMongoTemplate, "collection_openid_statistics");
 			if(obj==null) {
-				System.out.println(i);
+				resultMap.put(i+"月", "没有记录");
+			}else {
+				int usedOpenid = Integer.parseInt(obj.get("todayOpenid").toString());
+				int addOpenid = Integer.parseInt(obj.get("newOpenid").toString());
+				openidPerMonth = new OpenidPerMonth(pat, usedOpenid, addOpenid);
+				resultMap.put(i+"月", openidPerMonth);
 			}
 			/*int usedOpenid = Integer.parseInt(obj.get("todayOpenid").toString());
 			int addOpenid = Integer.parseInt(obj.get("newOpenid").toString());
@@ -113,7 +118,7 @@ public class OpenidStatisticsServiceImpl implements OpenidStatisticsService {
 			resultList.add(openidPerMonth);*/
 		}
 		
-		return resultList;
+		return resultMap;
 	}
 
 }

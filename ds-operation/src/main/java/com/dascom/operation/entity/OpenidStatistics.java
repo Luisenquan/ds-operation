@@ -13,78 +13,71 @@ public class OpenidStatistics implements Serializable {
 	
 	@Id
 	private String id;
-	@Field("statistics_date")
-	private String statisticsDate;
-	@Field("statistics_success")
-	private int statisticsSuccess;
-	@Field("statistics_fail")
-	private int statisticsFail;
-	@Field("print_total")
-	private int printTotal;
-	@Field("total_openid")
-	private int totalOpenid;
-	@Field("today_openid")
-	private int todayOpenid;
-	@Field("new_openid")
-	private int newOpenid;
+	private String statistics_date;
+	private int statistics_success;
+	private int statistics_fail;
+	private int print_total;
+	private int total_openid;
+	private int today_openid;
+	private int new_openid;
 	public String getId() {
 		return id;
 	}
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getStatisticsDate() {
-		return statisticsDate;
+	public String getStatistics_date() {
+		return statistics_date;
 	}
-	public void setStatisticsDate(String statisticsDate) {
-		this.statisticsDate = statisticsDate;
+	public void setStatistics_date(String statistics_date) {
+		this.statistics_date = statistics_date;
 	}
-	public int getStatisticsSuccess() {
-		return statisticsSuccess;
+	public int getStatistics_success() {
+		return statistics_success;
 	}
-	public void setStatisticsSuccess(int statisticsSuccess) {
-		this.statisticsSuccess = statisticsSuccess;
+	public void setStatistics_success(int statistics_success) {
+		this.statistics_success = statistics_success;
 	}
-	public int getStatisticsFail() {
-		return statisticsFail;
+	public int getStatistics_fail() {
+		return statistics_fail;
 	}
-	public void setStatisticsFail(int statisticsFail) {
-		this.statisticsFail = statisticsFail;
+	public void setStatistics_fail(int statistics_fail) {
+		this.statistics_fail = statistics_fail;
 	}
-	public int getPrintTotal() {
-		return printTotal;
+	public int getPrint_total() {
+		return print_total;
 	}
-	public void setPrintTotal(int printTotal) {
-		this.printTotal = printTotal;
+	public void setPrint_total(int print_total) {
+		this.print_total = print_total;
 	}
-	public int getTotalOpenid() {
-		return totalOpenid;
+	public int getTotal_openid() {
+		return total_openid;
 	}
-	public void setTotalOpenid(int totalOpenid) {
-		this.totalOpenid = totalOpenid;
+	public void setTotal_openid(int total_openid) {
+		this.total_openid = total_openid;
 	}
-	public int getTodayOpenid() {
-		return todayOpenid;
+	public int getToday_openid() {
+		return today_openid;
 	}
-	public void setTodayOpenid(int todayOpenid) {
-		this.todayOpenid = todayOpenid;
+	public void setToday_openid(int today_openid) {
+		this.today_openid = today_openid;
 	}
-	public int getNewOpenid() {
-		return newOpenid;
+	public int getNew_openid() {
+		return new_openid;
 	}
-	public void setNewOpenid(int newOpenid) {
-		this.newOpenid = newOpenid;
+	public void setNew_openid(int new_openid) {
+		this.new_openid = new_openid;
 	}
-	public OpenidStatistics(String statisticsDate, int statisticsSuccess, int statisticsFail, int printTotal,
-			int totalOpenid, int todayOpenid, int newOpenid) {
+	public OpenidStatistics(String statistics_date, int statistics_success, int statistics_fail, int print_total,
+			int total_openid, int today_openid, int new_openid) {
 		super();
-		this.statisticsDate = statisticsDate;
-		this.statisticsSuccess = statisticsSuccess;
-		this.statisticsFail = statisticsFail;
-		this.printTotal = printTotal;
-		this.totalOpenid = totalOpenid;
-		this.todayOpenid = todayOpenid;
-		this.newOpenid = newOpenid;
+		this.statistics_date = statistics_date;
+		this.statistics_success = statistics_success;
+		this.statistics_fail = statistics_fail;
+		this.print_total = print_total;
+		this.total_openid = total_openid;
+		this.today_openid = today_openid;
+		this.new_openid = new_openid;
 	}
 	public OpenidStatistics() {
 		super();
