@@ -20,6 +20,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.dascom.operation.entity.CollectionInterface;
 import com.dascom.operation.service.InterfaceService;
 import com.dascom.operation.service.RedisService;
+import com.dascom.operation.utils.HttpClientUtils;
 import com.dascom.operation.utils.MongoJoinPara;
 import com.dascom.operation.utils.RedisJoinPara;
 import com.dascom.operation.utils.ResultVOUtil;
@@ -28,6 +29,9 @@ import com.dascom.operation.vo.ResultVO;
 
 @RestController
 public class OperationController {
+	
+	@Value("${email}")
+	String emailUrl;
 	
 	private static final Logger logger = LogManager.getLogger(OperationController.class);
 	
@@ -59,8 +63,17 @@ public class OperationController {
 			logger.info("------redis没有数据，从mongodb中导入------");
 			for(CollectionInterface inter : interfaceLists){
 				MongoJoinPara mongoJoinPara = new MongoJoinPara();
-				resultList.add(mongoJoinPara.mongoToHttpClient(inter));
+				Map<String,Object> mongoResult = mongoJoinPara.mongoToHttpClient(inter);
+				resultList.add(mongoResult);
 				redisService.copyData(inter);
+				int resultCode = (int)mongoResult.get("statusCode");
+				if(resultCode>=400) {
+					String requestUrl = inter.getRequestUrl();
+					logger.info("----接口报错：发送邮箱报警----");
+					logger.info("----接口请求地址----"+requestUrl);
+					String resultLine = mongoResult.get("resultLine").toString();
+					HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
+				}
 			}
 			logger.info("------存入redis成功------");
 		}else{
@@ -69,7 +82,16 @@ public class OperationController {
 			for(String key:resultMap.keySet()){
 				Map<String,String> interMap = resultMap.get(key);
 				RedisJoinPara redisJoinPara = new RedisJoinPara();
-				resultList.add(redisJoinPara.redisToHttpClient(interMap));
+				Map<String,Object> resultRedis = redisJoinPara.redisToHttpClient(interMap);
+				resultList.add(resultRedis);
+				int resultCode = (int)resultRedis.get("statusCode");
+				if(resultCode>=400) {
+					String requestUrl = interMap.get("requestUrl");
+					logger.info("----接口报错：发送邮箱报警----");
+					logger.info("----接口请求地址----"+requestUrl);
+					String resultLine = resultRedis.get("resultLine").toString();
+					HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
+				}
 			}
 		}
 		long end = System.currentTimeMillis();
@@ -115,45 +137,7 @@ public class OperationController {
 		logger.info("----新增接口----插入redis成功");
 		return ResultVOUtil.success();
 		
-		
-		
-		
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 }

@@ -10,5 +10,6 @@ public interface InterfaceService {
 	
 	//添加测试接口到mongo
 	void addInterface(CollectionInterface inter);
-
+	
+	
 }

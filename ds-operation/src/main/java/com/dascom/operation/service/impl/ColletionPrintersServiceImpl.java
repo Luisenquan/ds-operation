@@ -66,7 +66,6 @@ public class ColletionPrintersServiceImpl implements CollectionPrintersService {
 	public List<CollectionPrinters> getonlineDevice() {
 		Query query = new Query();
 		query.addCriteria(Criteria.where("login_date").gte(getStartTime()).lt(getEndTime()));
-		
 		return cloudDeviceMongoTemplate.find(query, CollectionPrinters.class);
 	}
 

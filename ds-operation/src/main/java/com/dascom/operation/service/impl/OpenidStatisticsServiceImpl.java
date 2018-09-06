@@ -18,7 +18,7 @@ import com.dascom.operation.entity.OpenidPerMonth;
 import com.dascom.operation.entity.OpenidStatistics;
 import com.dascom.operation.service.OpenidStatisticsService;
 import com.dascom.operation.utils.AggreationWithResult;
-
+import com.dascom.operation.utils.FormatDate;
 import com.mongodb.DBObject;
 
 @Component("openidStatisticsService")
@@ -33,8 +33,8 @@ public class OpenidStatisticsServiceImpl implements OpenidStatisticsService {
 	// 插入统计数据
 	@Override
 	public void insertStatistics() {
-		//String date = FormatDate.statisticsDate();
-		String date = "20180904";
+		String date = FormatDate.statisticsDate();
+		//String date = "20180903";
 		OpenidStatistics statistics;
 		// 统计当天所有的打印次数
 		Aggregation agg = Aggregation.newAggregation(Aggregation.unwind("print_info"),

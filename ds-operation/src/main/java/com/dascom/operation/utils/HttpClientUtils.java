@@ -2,12 +2,14 @@ package com.dascom.operation.utils;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.Map.Entry;
 
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -16,17 +18,23 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPatch;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpRequestBase;
+import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
 
 import com.alibaba.fastjson.JSON;
 
 
 public class HttpClientUtils {
+	
+	
 	
 	private static final Logger logger = LogManager.getLogger(HttpClientUtils.class);
 	
@@ -237,6 +245,45 @@ public class HttpClientUtils {
 			}
 		}
 		return resultMap;
+	}
+	
+	
+	/**
+	 * 邮箱警报
+	 * @param interfaceName
+	 * @param code
+	 * @param resultLine
+	 */
+	public static void sendEmail(String emailUrl,String interfaceName,int code,String resultLine) {
+		
+		try {
+			client = HttpClients.createDefault();
+			HttpPost post = new HttpPost(emailUrl);
+			MultipartEntityBuilder builder = MultipartEntityBuilder.create();
+			
+			//测试
+			/*builder.addTextBody("sender", "qnm123456");
+			builder.addTextBody("password", "qnm123456Gzds1130");*/
+			builder.addTextBody("sender", "e10001");
+			builder.addTextBody("password", "Gzds1130");
+			builder.addTextBody("recipient", "522267533@qq.com");
+			builder.addTextBody("subject", "请求地址:"+interfaceName,ContentType.create(HTTP.PLAIN_TEXT_TYPE,HTTP.UTF_8));
+			builder.addTextBody("content", "----错误信息---- 错误码："+code+",错误内容："+resultLine,ContentType.create(HTTP.PLAIN_TEXT_TYPE,HTTP.UTF_8));
+			Charset charset = Charset.forName("UTF-8");
+			builder.setCharset(charset);
+			HttpEntity entity = builder.build();
+			
+			post.setEntity(entity);
+			HttpResponse response = client.execute(post);
+			logger.info("----邮件已发送----");
+		} catch (ClientProtocolException e) {
+			logger.error("----调用client错误----"+e.getStackTrace().toString());
+			e.printStackTrace();
+		} catch (IOException e) {
+			logger.error("----调用IO错误----"+e.getStackTrace().toString());
+			e.printStackTrace();
+		}
+		
 	}
 
 }

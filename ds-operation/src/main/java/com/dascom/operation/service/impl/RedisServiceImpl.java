@@ -91,8 +91,7 @@ public class RedisServiceImpl implements RedisService {
 		for (String k : responses.keySet()) {
 			result.put(k, responses.get(k).get());
 		}
-		//long end = System.currentTimeMillis();
-		//System.out.println("hgetAll with pipeline used [" + (end - start) / 1000 + "] seconds ..");
+	
 		redis.disconnect();
 		return result;
 	}

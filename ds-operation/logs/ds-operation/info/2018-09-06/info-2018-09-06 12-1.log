@@ -1,0 +1,90 @@
+2018-09-06 12:30:03 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:30:03 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:42:51 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:42:51 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:42:57 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-06 12:42:57 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-06 12:42:57 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-06 12:42:57 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-06 12:42:57 INFO [OperationController.java:80] - ------从redis中读取数据！------
+2018-09-06 12:42:57 INFO [OperationController.java:90] - ----接口报错：发送邮箱报警----
+2018-09-06 12:42:57 INFO [OperationController.java:91] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-06 12:42:57 INFO [HttpClientUtils.java:272] - ----邮件已发送----
+2018-09-06 12:42:57 INFO [OperationController.java:98] - 总耗时：320
+2018-09-06 12:42:57 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-06 12:44:05 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:44:05 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:44:35 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:44:35 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:45:04 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-06 12:45:04 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-06 12:45:04 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-06 12:45:04 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-06 12:45:04 INFO [OperationController.java:80] - ------从redis中读取数据！------
+2018-09-06 12:45:20 INFO [OperationController.java:90] - ----接口报错：发送邮箱报警----
+2018-09-06 12:45:24 INFO [OperationController.java:91] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-06 12:46:10 INFO [HttpClientUtils.java:273] - ----邮件已发送----
+2018-09-06 12:46:30 INFO [OperationController.java:98] - 总耗时：84102
+2018-09-06 12:46:33 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-06 12:47:53 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:47:53 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:48:01 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-06 12:48:01 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-06 12:48:01 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-06 12:48:01 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-06 12:48:01 INFO [OperationController.java:80] - ------从redis中读取数据！------
+2018-09-06 12:48:01 INFO [OperationController.java:90] - ----接口报错：发送邮箱报警----
+2018-09-06 12:48:01 INFO [OperationController.java:91] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-06 12:48:02 INFO [HttpClientUtils.java:273] - ----邮件已发送----
+2018-09-06 12:48:02 INFO [OperationController.java:98] - 总耗时：570
+2018-09-06 12:48:02 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-06 12:49:54 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:49:54 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:50:04 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-06 12:50:04 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-06 12:50:04 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-06 12:50:04 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-06 12:50:04 INFO [OperationController.java:80] - ------从redis中读取数据！------
+2018-09-06 12:50:04 INFO [OperationController.java:90] - ----接口报错：发送邮箱报警----
+2018-09-06 12:50:04 INFO [OperationController.java:91] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-06 12:50:04 INFO [HttpClientUtils.java:273] - ----邮件已发送----
+2018-09-06 12:50:04 INFO [OperationController.java:98] - 总耗时：291
+2018-09-06 12:50:04 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-06 12:51:04 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:51:04 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:51:10 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-06 12:51:10 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-06 12:51:10 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-06 12:51:10 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-06 12:51:10 INFO [OperationController.java:80] - ------从redis中读取数据！------
+2018-09-06 12:51:10 INFO [OperationController.java:90] - ----接口报错：发送邮箱报警----
+2018-09-06 12:51:10 INFO [OperationController.java:91] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-06 12:51:10 INFO [HttpClientUtils.java:274] - ----邮件已发送----
+2018-09-06 12:51:11 INFO [OperationController.java:98] - 总耗时：301
+2018-09-06 12:51:11 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-06 12:53:23 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:53:23 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:53:28 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-06 12:53:28 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-06 12:53:28 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-06 12:53:28 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-06 12:53:28 INFO [OperationController.java:80] - ------从redis中读取数据！------
+2018-09-06 12:53:28 INFO [OperationController.java:90] - ----接口报错：发送邮箱报警----
+2018-09-06 12:53:28 INFO [OperationController.java:91] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-06 12:53:29 INFO [HttpClientUtils.java:277] - ----邮件已发送----
+2018-09-06 12:53:29 INFO [OperationController.java:98] - 总耗时：324
+2018-09-06 12:53:29 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-06 12:53:40 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:53:40 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------
+2018-09-06 12:53:46 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-06 12:53:46 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-06 12:53:46 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-06 12:53:46 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-06 12:53:46 INFO [OperationController.java:80] - ------从redis中读取数据！------
+2018-09-06 12:53:46 INFO [OperationController.java:90] - ----接口报错：发送邮箱报警----
+2018-09-06 12:53:46 INFO [OperationController.java:91] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-06 12:53:46 INFO [HttpClientUtils.java:277] - ----邮件已发送----
+2018-09-06 12:53:46 INFO [OperationController.java:98] - 总耗时：266
+2018-09-06 12:53:46 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-06 12:54:33 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
+2018-09-06 12:54:33 INFO [RedisConfig.java:58] - ------redis地址:127.0.0.1:6379------

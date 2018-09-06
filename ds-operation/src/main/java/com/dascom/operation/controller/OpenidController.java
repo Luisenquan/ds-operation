@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSONObject;
-import com.dascom.operation.entity.OpenidInfo;
-import com.dascom.operation.entity.OpenidPerMonth;
 import com.dascom.operation.entity.OpenidStatistics;
 import com.dascom.operation.service.OpenidInfoService;
 import com.dascom.operation.service.OpenidStatisticsService;
+import com.dascom.operation.utils.ResultVOUtil;
+import com.dascom.operation.vo.ResultVO;
 
 
 @RestController
@@ -38,8 +38,20 @@ public class OpenidController {
 	
 	
 	@RequestMapping(value="saveOpenid",method=RequestMethod.POST)
-	public void saveOpenId(HttpServletRequest req,HttpServletResponse resp,@RequestBody JSONObject obj) {
-		String openid = (String)obj.get("openid");
+	public ResultVO saveOpenId(HttpServletRequest req,HttpServletResponse resp,@RequestBody JSONObject obj) {
+		if(!obj.containsKey("openid")) {
+			logger.info("------缺少openid参数------");
+			return ResultVOUtil.error(1301);
+		}
+		if(!obj.containsKey("success")) {
+			logger.info("------缺少success参数------");
+			return ResultVOUtil.error(1301);
+		}
+		if(!obj.containsKey("fail")) {
+			logger.info("------缺少fail参数------");
+			return ResultVOUtil.error(1301);
+		}
+		String openid = obj.get("openid").toString();
 		int printSucced = (int) obj.get("success");
 		int printFail = (int) obj.get("fail");
 		boolean check = openidInfoService.checkOpenid(openid);
@@ -48,11 +60,13 @@ public class OpenidController {
 			openidInfoService.update(openid, printSucced, printFail);
 			logger.info("------更新成功------");
 			logger.info("----更新----openid="+openid+",insertSuccess="+printSucced+",insertFail="+printFail);
+			return ResultVOUtil.success();
 		}else {
 			//插入
 			openidInfoService.add(openid, printSucced, printFail);
 			logger.info("------新增成功------");
 			logger.info("----新增----openid="+openid+",addSuccess="+printSucced+",addFail="+printFail);
+			return ResultVOUtil.success();
 		}
 	}
 	
