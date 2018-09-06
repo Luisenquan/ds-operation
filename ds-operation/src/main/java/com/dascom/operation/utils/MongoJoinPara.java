@@ -4,6 +4,8 @@ import java.util.Map;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Component;
+
 import com.dascom.operation.entity.CollectionInterface;
 
 /**
@@ -13,6 +15,8 @@ import com.dascom.operation.entity.CollectionInterface;
  * @time 2018年8月22日 下午2:49:47
  * @project_name ds-operation
  */
+
+@Component
 public class MongoJoinPara {
 	
 	private static final Logger logger = LogManager.getLogger(MongoJoinPara.class);

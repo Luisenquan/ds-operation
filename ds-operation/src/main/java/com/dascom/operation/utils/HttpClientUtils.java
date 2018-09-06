@@ -34,7 +34,7 @@ import com.alibaba.fastjson.JSON;
 
 public class HttpClientUtils {
 	
-	
+
 	
 	private static final Logger logger = LogManager.getLogger(HttpClientUtils.class);
 	
@@ -132,6 +132,7 @@ public class HttpClientUtils {
 			int statusCode = response.getStatusLine().getStatusCode();
 			resultMap.put("statusCode", statusCode);
 			HttpEntity entity = response.getEntity();
+			
 			String resultLine = EntityUtils.toString(entity, "UTF-8");
 			resultMap.put("resultLine", resultLine);
 		} catch  (Exception e){
