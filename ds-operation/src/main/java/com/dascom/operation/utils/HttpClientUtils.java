@@ -11,6 +11,7 @@ import java.util.Map.Entry;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpDelete;
@@ -30,24 +31,19 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 
 import com.alibaba.fastjson.JSON;
-
+import com.alibaba.fastjson.JSONObject;
 
 public class HttpClientUtils {
-	
 
-	
 	private static final Logger logger = LogManager.getLogger(HttpClientUtils.class);
-	
+
 	static CloseableHttpClient client = null;
 	static CloseableHttpResponse response = null;
-	
-	//设置连接超时
-	private static 
-	RequestConfig requestConfig = RequestConfig.custom()
-	.setConnectionRequestTimeout(1000)
-	.setConnectTimeout(5000)
-	.setSocketTimeout(5000).build();
-	
+
+	// 设置连接超时
+	private static RequestConfig requestConfig = RequestConfig.custom().setConnectionRequestTimeout(1000)
+			.setConnectTimeout(5000).setSocketTimeout(5000).build();
+
 	/**
 	 * 封装请求头
 	 * 
@@ -66,8 +62,6 @@ public class HttpClientUtils {
 			}
 		}
 	}
-	
-	
 
 	/**
 	 * httpclient get请求
@@ -77,8 +71,9 @@ public class HttpClientUtils {
 	 * @return
 	 */
 	public static Map<String, Object> doGet(String url, String headerPara) {
-		/*CloseableHttpClient client = null;
-		CloseableHttpResponse response = null;*/
+		/*
+		 * CloseableHttpClient client = null; CloseableHttpResponse response = null;
+		 */
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		try {
 			client = HttpClients.createDefault();
@@ -90,7 +85,7 @@ public class HttpClientUtils {
 			HttpEntity entity = response.getEntity();
 			String resultLine = EntityUtils.toString(entity, "UTF-8");
 			resultMap.put("resultLine", resultLine);
-		} catch (Exception e){
+		} catch (Exception e) {
 			logger.info(e);
 		} finally {
 			try {
@@ -99,7 +94,7 @@ public class HttpClientUtils {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			
+
 		}
 		return resultMap;
 	}
@@ -116,9 +111,10 @@ public class HttpClientUtils {
 	 * @throws Exception
 	 */
 	public static Map<String, Object> doPost(String url, String body, String headerParam) {
-		
-		/*CloseableHttpClient client = null;
-		CloseableHttpResponse response = null;*/
+
+		/*
+		 * CloseableHttpClient client = null; CloseableHttpResponse response = null;
+		 */
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		try {
 			client = HttpClients.createDefault();
@@ -132,10 +128,10 @@ public class HttpClientUtils {
 			int statusCode = response.getStatusLine().getStatusCode();
 			resultMap.put("statusCode", statusCode);
 			HttpEntity entity = response.getEntity();
-			
+
 			String resultLine = EntityUtils.toString(entity, "UTF-8");
 			resultMap.put("resultLine", resultLine);
-		} catch  (Exception e){
+		} catch (Exception e) {
 			logger.info(e);
 		} finally {
 			try {
@@ -160,8 +156,9 @@ public class HttpClientUtils {
 	 * @throws IOException
 	 */
 	public static Map<String, Object> doDelete(String url, String headerParam) {
-		/*CloseableHttpClient client = null;
-		CloseableHttpResponse response = null;*/
+		/*
+		 * CloseableHttpClient client = null; CloseableHttpResponse response = null;
+		 */
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		try {
 			client = HttpClients.createDefault();
@@ -183,7 +180,7 @@ public class HttpClientUtils {
 			}
 			resultMap.put("resultLine", resultLine);
 
-		} catch (Exception e){
+		} catch (Exception e) {
 			logger.info(e);
 		} finally {
 			try {
@@ -209,8 +206,9 @@ public class HttpClientUtils {
 	 * @throws IOException
 	 */
 	public static Map<String, Object> doPatch(String url, String jsonPara, String headerParam) {
-		/*CloseableHttpClient client = null;
-		CloseableHttpResponse response = null;*/
+		/*
+		 * CloseableHttpClient client = null; CloseableHttpResponse response = null;
+		 */
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		try {
 			client = HttpClients.createDefault();
@@ -231,7 +229,7 @@ public class HttpClientUtils {
 			}
 			resultMap.put("resultLine", resultLine);
 
-		} catch (Exception e){
+		} catch (Exception e) {
 			logger.info(e);
 		} finally {
 			try {
@@ -247,44 +245,80 @@ public class HttpClientUtils {
 		}
 		return resultMap;
 	}
-	
-	
+
 	/**
 	 * 邮箱警报
+	 * 
 	 * @param interfaceName
 	 * @param code
 	 * @param resultLine
 	 */
-	public static void sendEmail(String emailUrl,String interfaceName,int code,String resultLine) {
-		
+	public static void sendEmail(String emailUrl, String interfaceName, int code, String resultLine) {
+
 		try {
 			client = HttpClients.createDefault();
 			HttpPost post = new HttpPost(emailUrl);
 			MultipartEntityBuilder builder = MultipartEntityBuilder.create();
-			
-			//测试
-			/*builder.addTextBody("sender", "qnm123456");
-			builder.addTextBody("password", "qnm123456Gzds1130");*/
+
+			// 测试
+			/*
+			 * builder.addTextBody("sender", "qnm123456"); builder.addTextBody("password",
+			 * "qnm123456Gzds1130");
+			 */
 			builder.addTextBody("sender", "e10001");
 			builder.addTextBody("password", "Gzds1130");
 			builder.addTextBody("recipient", "522267533@qq.com");
-			builder.addTextBody("subject", "请求地址:"+interfaceName,ContentType.create(HTTP.PLAIN_TEXT_TYPE,HTTP.UTF_8));
-			builder.addTextBody("content", "----错误信息---- 错误码："+code+",错误内容："+resultLine,ContentType.create(HTTP.PLAIN_TEXT_TYPE,HTTP.UTF_8));
+			builder.addTextBody("subject", "请求地址:" + interfaceName,
+					ContentType.create(HTTP.PLAIN_TEXT_TYPE, HTTP.UTF_8));
+			builder.addTextBody("content", "----错误信息---- 错误码：" + code + ",错误内容：" + resultLine,
+					ContentType.create(HTTP.PLAIN_TEXT_TYPE, HTTP.UTF_8));
 			Charset charset = Charset.forName("UTF-8");
 			builder.setCharset(charset);
 			HttpEntity entity = builder.build();
-			
+
 			post.setEntity(entity);
 			HttpResponse response = client.execute(post);
 			logger.info("----邮件已发送----");
 		} catch (ClientProtocolException e) {
-			logger.error("----调用client错误----"+e.getStackTrace().toString());
+			logger.error("----调用client错误----" + e.getStackTrace().toString());
 			e.printStackTrace();
 		} catch (IOException e) {
-			logger.error("----调用IO错误----"+e.getStackTrace().toString());
+			logger.error("----调用IO错误----" + e.getStackTrace().toString());
 			e.printStackTrace();
 		}
-		
+	}
+
+	public static void sendDingding(String dingdingUrl, Map<String, Object> resultMap, String requestUrl) {
+
+		try {
+			client = HttpClients.createDefault();
+			HttpPost post = new HttpPost(dingdingUrl);
+
+			JSONObject jsonParam = new JSONObject();
+			int statusCode = (int) resultMap.get("statusCode"); // http错误码
+			String resultLine = resultMap.get("resultLine").toString(); // 错误信息
+
+			String content = "请求地址:" + requestUrl + "  ----错误信息---- 错误码：" + statusCode + "  ,错误内容：" + resultLine;
+			jsonParam.put("text", content);
+			StringEntity entity = new StringEntity(jsonParam.toString(), "utf-8");
+			entity.setContentEncoding("UTF-8");
+			entity.setContentType("application/json");
+			post.setEntity(entity);
+			HttpResponse response = client.execute(post);
+			int code = response.getStatusLine().getStatusCode();
+			String result = EntityUtils.toString(response.getEntity(), "UTF-8");
+			if(code<400) {
+				logger.info("----钉钉信息已发送----");
+			}else {
+				logger.error("----发送失败，错误原因----"+result);
+			}
+		} catch (ClientProtocolException e) {
+			logger.error("----调用client错误----"+e.getStackTrace().toString());
+			
+		} catch (IOException e) {
+			logger.error("----调用IO错误----"+e.getStackTrace().toString());
+		}
+
 	}
 
 }
