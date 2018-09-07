@@ -144,8 +144,8 @@ public class PrintStatisticeServiceImpl implements PrintStatisticeService{
 	 * 统计截止当前月的各月份的打印记录
 	 */
 	@Override
-	public Map<String, Object> totalPrintWithPerMonth() {
-		Map<String,Object> resultMap = new HashMap<String,Object>();
+	public Map<String, Integer> totalPrintWithPerMonth() {
+		Map<String,Integer> resultMap = new HashMap<String,Integer>();
 		//获取当前系统的月份
 		Calendar cal = Calendar.getInstance();
 		int month = cal.get(Calendar.MONTH)+1;
@@ -156,14 +156,15 @@ public class PrintStatisticeServiceImpl implements PrintStatisticeService{
 					Aggregation.group().sum("succeed_page").as("success_times").sum("failure_page").as("failure_tiems")
 			);
 			DBObject obj = getResult(agg);
-			
-			String result = JSON.toJSONString(obj);
+			int total = obj==null?0:Integer.parseInt(obj.get("success_times").toString()) + Integer.parseInt(obj.get("failure_tiems").toString());
+			resultMap.put(regex, total);
+			/*String result = JSON.toJSONString(obj);
 			if(result.equals("null")){
 				resultMap.put(i+"月", 0);
 			}else{
 				int total = Integer.parseInt(obj.get("success_times").toString()) + Integer.parseInt(obj.get("failure_tiems").toString());
 				resultMap.put(i+"月", total);
-			}
+			}*/
 		}
 		
 		return resultMap;

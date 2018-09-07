@@ -26,6 +26,6 @@ public interface PrintStatisticeService {
 	String totalPrintWithMonth(String date);
 	
 	//统计截止当前月的各月份的打印记录
-	Map<String,Object> totalPrintWithPerMonth();
+	Map<String,Integer> totalPrintWithPerMonth();
 
 }

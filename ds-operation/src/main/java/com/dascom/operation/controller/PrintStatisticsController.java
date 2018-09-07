@@ -70,7 +70,7 @@ public class PrintStatisticsController {
 	 * 统计截止当前月的各月份的打印记录
 	 */
 	@GetMapping("printWithEachMonth")
-	public Map<String,Object> getEachMonthResult(){
+	public Map<String,Integer> getEachMonthResult(){
 		return printStatisticeService.totalPrintWithPerMonth();
 	}
 
