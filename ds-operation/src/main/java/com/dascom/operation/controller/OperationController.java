@@ -85,7 +85,7 @@ public class OperationController {
 					String body = "{\"text\":\""+content+"\"}";
 					String header = "{\"Content-Type\":\"application/json; charset=utf-8\"}";
 					HttpClientUtils.doPost(dingdingUrl, body, header);*/
-					HttpClientUtils.sendDingding(dingdingUrl, mongoResult, requestUrl);
+					//HttpClientUtils.sendDingding(dingdingUrl, mongoResult, requestUrl);
 					
 				}
 			}
@@ -114,7 +114,7 @@ public class OperationController {
 					String body = "{\"text\":\""+content+"\"}";
 					String header = "{\"Content-Type\":\"application/json\"}";
 					HttpClientUtils.doPost(dingdingUrl, body, header);*/
-					HttpClientUtils.sendDingding(dingdingUrl, resultRedis, requestUrl);
+					//HttpClientUtils.sendDingding(dingdingUrl, resultRedis, requestUrl);
 					
 				}
 			}

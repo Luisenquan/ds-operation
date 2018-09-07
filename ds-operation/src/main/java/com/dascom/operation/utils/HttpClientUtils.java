@@ -274,6 +274,7 @@ public class HttpClientUtils {
 					ContentType.create(HTTP.PLAIN_TEXT_TYPE, HTTP.UTF_8));
 			Charset charset = Charset.forName("UTF-8");
 			builder.setCharset(charset);
+			
 			HttpEntity entity = builder.build();
 
 			post.setEntity(entity);
@@ -314,11 +315,9 @@ public class HttpClientUtils {
 			}
 		} catch (ClientProtocolException e) {
 			logger.error("----调用client错误----"+e.getStackTrace().toString());
-			
 		} catch (IOException e) {
 			logger.error("----调用IO错误----"+e.getStackTrace().toString());
 		}
-
 	}
 
 }

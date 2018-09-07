@@ -6,7 +6,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Document(collection="collection_operation")
+@Document(collection="collection_interface_info")
 public class CollectionInterface implements Serializable{
 
 	private static final long serialVersionUID = -956081880943583457L;
