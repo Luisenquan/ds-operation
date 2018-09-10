@@ -7,8 +7,7 @@ import com.dascom.operation.entity.ActiveState;
 
 public interface ActiveStateService {
 	
-	//请求v1.0/device/statistics_online接口统计设备时长
-	void getOnline();
+	
 	
 	//获取所有
 	List<ActiveState> getAll();

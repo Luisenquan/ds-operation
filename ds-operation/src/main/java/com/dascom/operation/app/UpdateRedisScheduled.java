@@ -32,7 +32,6 @@ public class UpdateRedisScheduled {
 	private RedisService redisService;
 
 	@Scheduled(cron="59 59 23 * * ?") //每天23点59分59秒更新
-
 	public void updateDate() {
 		// 查询mongo获取数据
 		List<CollectionInterface> interfaceList = interfaceService.getAllInterface();

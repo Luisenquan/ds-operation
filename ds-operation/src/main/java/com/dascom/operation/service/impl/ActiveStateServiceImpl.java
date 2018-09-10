@@ -58,24 +58,7 @@ public class ActiveStateServiceImpl implements ActiveStateService{
 		return cloudDeviceMongoTemplate.find(query, ActiveState.class);
 	}
 
-	//请求统计设备时长接口
-	@Override
-	public void getOnline() {
-		String uuid= UUID.randomUUID().toString();
-		String jsonPara = "{\"id\":\""+uuid+"\"}";
-		logger.info(jsonPara);
-		String headerPara = "{\"Content-Type\":\"application/json\"}";
-		logger.info(headerPara);
-		Map<String,Object> resultMap = HttpClientUtils.doPost(statisticsOnline, jsonPara, headerPara);
-		int statusCode = (int) resultMap.get("statusCode");
-		String resultLine = (String)resultMap.get("resultLine");
-		if(statusCode<400) {
-			logger.info("-------请求成功！查询数据库------");
-		}else {
-			logger.error("------请求失败！错误码："+statusCode+"------");
-			logger.error("------失败原因------"+resultLine);
-		}
-	}
+	
 
 	@Override
 	public List<ActiveState> getActiveDevice(double time) {
