@@ -23,7 +23,7 @@ public class FormatDate {
 		long hours = (time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
 		long minutes = (time % (1000 * 60 * 60)) / (1000 * 60);
 		long seconds = (time % (1000 * 60)) / 1000;
-		return days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";
+		return days + " 天 " + hours + " 小时 " + minutes + " 分 " + seconds + " 秒 ";
 	}
 	
 	
