@@ -1,81 +1,80 @@
-2018-09-10 10:03:44 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:03:44 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:03:48 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:03:48 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:03:48 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:03:48 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:03:48 INFO [ActiveStateServiceImpl.java:65] - {"id":"d452a70a-a91d-4043-ad5f-3cc73f242a53"}
-2018-09-10 10:03:48 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-10 10:03:49 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-10 10:03:49 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-10 10:04:05 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:04:05 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:04:08 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:04:08 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:04:08 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:04:08 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:04:08 INFO [ActiveStateServiceImpl.java:65] - {"id":"d9176a4b-1abf-426b-893f-47790061774d"}
-2018-09-10 10:04:08 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-10 10:04:08 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-10 10:04:08 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-10 10:05:09 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:05:09 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:05:14 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:05:14 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:05:17 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:05:17 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:05:17 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:05:17 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:05:17 INFO [ActiveStateServiceImpl.java:65] - {"id":"94197e56-33a5-47d4-8305-68a862835682"}
-2018-09-10 10:05:17 INFO [ActiveStateServiceImpl.java:67] - {"Content-Type":"application/json"}
-2018-09-10 10:05:18 INFO [ActiveStateServiceImpl.java:72] - -------请求成功！查询数据库------
-2018-09-10 10:05:18 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-10 10:06:31 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:06:31 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:08:59 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:08:59 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:08:59 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:08:59 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:08:59 INFO [WebLogAspect.java:48] - 参数:time,值:0.5
-2018-09-10 10:08:59 INFO [ActiveStateServiceImpl.java:66] - {"id":"b2c43cdf-c1fe-490e-b381-6ae71b07da4e"}
-2018-09-10 10:08:59 INFO [ActiveStateServiceImpl.java:68] - {"Content-Type":"application/json"}
-2018-09-10 10:08:59 INFO [ActiveStateServiceImpl.java:73] - -------请求成功！查询数据库------
-2018-09-10 10:09:08 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-10 10:09:35 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:09:35 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:09:42 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:09:42 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:09:45 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:09:45 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:09:45 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:09:45 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:09:45 INFO [WebLogAspect.java:48] - 参数:time,值:0.5
-2018-09-10 10:09:45 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-10 10:09:59 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:09:59 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:09:59 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:09:59 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:09:59 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-10 10:10:27 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:10:27 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:10:30 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:10:30 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:10:30 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:10:30 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:10:30 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-10 10:10:58 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:10:58 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:11:01 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:11:01 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:11:01 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:11:01 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:11:01 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
-2018-09-10 10:13:43 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:13:43 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:14:23 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
-2018-09-10 10:14:23 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
-2018-09-10 10:14:26 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-10 10:14:26 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
-2018-09-10 10:14:26 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-10 10:14:26 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-10 10:14:26 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:12:14 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:12:14 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:13:59 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:13:59 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:16:23 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:16:23 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:17:27 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:17:27 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:18:15 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:18:15 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:18:38 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:18:38 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:18:38 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:18:38 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:18:38 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:43:43 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:43:43 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByDay
+2018-09-10 15:43:43 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:43:43 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:43:43 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:45:00 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:45:00 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:45:00 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:45:00 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:45:00 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:46:36 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:46:36 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:46:45 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:46:45 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:47:04 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:47:04 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:47:08 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:47:08 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:47:08 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:47:08 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:47:08 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:49:07 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:49:07 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:49:10 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:49:10 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:49:34 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:49:34 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:49:42 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:49:42 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:49:42 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:49:42 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:49:42 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:50:54 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:50:54 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:51:01 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:51:01 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:51:01 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:51:01 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:51:01 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:53:09 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:53:09 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:53:12 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:53:12 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:53:12 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:53:12 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:53:12 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:53:28 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:53:28 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:53:28 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:53:28 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:53:28 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:53:30 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:53:30 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:53:30 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:53:30 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:53:30 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 15:54:01 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:54:01 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:54:19 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 15:54:19 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 15:54:23 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 15:54:23 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/findOpenidByMonth
+2018-09-10 15:54:23 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 15:54:23 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 15:54:23 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

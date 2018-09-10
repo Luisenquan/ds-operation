@@ -64,9 +64,12 @@ public class ActiveStateController {
 			String activeId = active.getActiveId();
 			activeId = activeId.substring(0, activeId.indexOf(year));
 			long onlineTime = active.getOnlineTime();
-			String runTime = FormatDate.formatDuring(onlineTime);
+			//String runTime = FormatDate.formatDuring(onlineTime);
 			resultMap.put(activeId, String.valueOf(onlineTime));
 		}
+		
+		 
+
 		
 		return resultMap;
 	}

@@ -3,19 +3,14 @@ package com.dascom.operation.service;
 import java.util.List;
 import java.util.Map;
 
-import com.dascom.operation.entity.OpenidPerMonth;
-import com.dascom.operation.entity.OpenidStatistics;
+import com.dascom.operation.entity.OperationOpenidStatistics;
 
 public interface OpenidStatisticsService {
 	
+	//获取每日openid统计情况
+	List<OperationOpenidStatistics> getOpenidStatistics();
 	
-	//插入当天统计数据
-	void insertStatistics();
-	
-	//返回查询列表
-	List<OpenidStatistics> getOpenidStatisticsList();
-	
-	//统计每月openid新增数
-	Map<String,Object> monthlyStatistics();
+	//按月统计openid使用情况
+	Map<Object,Object> getOpenidStatisticsPerMonth();
 
 }
