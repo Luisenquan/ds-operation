@@ -58,6 +58,7 @@ public class ActiveStateServiceImpl implements ActiveStateService{
 		return cloudDeviceMongoTemplate.find(query, ActiveState.class);
 	}
 
+	//请求统计设备时长接口
 	@Override
 	public void getOnline() {
 		String uuid= UUID.randomUUID().toString();

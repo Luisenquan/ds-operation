@@ -149,8 +149,9 @@ public class PrintStatisticeServiceImpl implements PrintStatisticeService{
 		//获取当前系统的月份
 		Calendar cal = Calendar.getInstance();
 		int month = cal.get(Calendar.MONTH)+1;
+		int year = cal.get(Calendar.YEAR);
 		for(int i=1;i<=month;i++){
-			String regex = i<10?"20180"+i:"2018"+i;
+			String regex = i<10?year+"0"+i:year+i+"";
 			Aggregation agg = Aggregation.newAggregation(
 					Aggregation.match(Criteria.where("id").regex(regex)),
 					Aggregation.group().sum("succeed_page").as("success_times").sum("failure_page").as("failure_tiems")
@@ -158,13 +159,6 @@ public class PrintStatisticeServiceImpl implements PrintStatisticeService{
 			DBObject obj = getResult(agg);
 			int total = obj==null?0:Integer.parseInt(obj.get("success_times").toString()) + Integer.parseInt(obj.get("failure_tiems").toString());
 			resultMap.put(regex, total);
-			/*String result = JSON.toJSONString(obj);
-			if(result.equals("null")){
-				resultMap.put(i+"月", 0);
-			}else{
-				int total = Integer.parseInt(obj.get("success_times").toString()) + Integer.parseInt(obj.get("failure_tiems").toString());
-				resultMap.put(i+"月", total);
-			}*/
 		}
 		
 		return resultMap;

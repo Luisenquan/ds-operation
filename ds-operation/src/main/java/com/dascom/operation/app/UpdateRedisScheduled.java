@@ -42,10 +42,9 @@ public class UpdateRedisScheduled {
 			}
 			logger.info("------定时刷新成功！------");
 		} catch (Exception e) {
-			logger.info("------定时刷新失败！------");
-			logger.error(e);
+			logger.info("------定时刷新失败！查看错误日志------");
+			logger.error(e.getStackTrace().toString());
 		}
-
 	}
 
 }

@@ -1,6 +1,7 @@
 package com.dascom.operation.controller;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,9 +47,11 @@ public class ActiveStateController {
 	@RequestMapping(value="getActiveDevice",method=RequestMethod.GET)
 	public Map<String,String> getActive(@RequestParam(defaultValue="0") double time){
 		//请求统计设备时长接口
-		activeStateService.getOnline();
+		//activeStateService.getOnline();
 		
 		//查询设备在线时长
+		Calendar cal = Calendar.getInstance();
+		String year = String.valueOf(cal.get(Calendar.YEAR));
 		Map<String,String>resultMap = new HashMap<String,String>();
 		List<ActiveState> actives = new ArrayList<ActiveState>();
 		if(time==0) {
@@ -59,9 +62,10 @@ public class ActiveStateController {
 		
 		for(ActiveState active : actives) {
 			String activeId = active.getActiveId();
+			activeId = activeId.substring(0, activeId.indexOf(year));
 			long onlineTime = active.getOnlineTime();
 			String runTime = FormatDate.formatDuring(onlineTime);
-			resultMap.put(activeId, runTime);
+			resultMap.put(activeId, String.valueOf(onlineTime));
 		}
 		
 		return resultMap;
