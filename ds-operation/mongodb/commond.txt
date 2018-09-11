@@ -1,2 +1,0 @@
-
-db.collection_openid_info.aggregate([{$unwind:"$print_info"},{$match:{"print_info.print_date":"20180830"}},{$group:{_id:"$print_info.print_date",fail:{$sum:"$print_info.print_fail"},success:{$sum:"$print_info.print_succed"}}}])

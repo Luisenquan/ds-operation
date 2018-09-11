@@ -80,13 +80,6 @@ public class OperationController {
 					HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
 					
 					logger.info("----接口报错：发送钉钉报警----");
-					logger.info("----接口请求地址----"+requestUrl);
-					/*String content = "请求地址："+requestUrl+resultLine;
-					String body = "{\"text\":\""+content+"\"}";
-					String header = "{\"Content-Type\":\"application/json; charset=utf-8\"}";
-					HttpClientUtils.doPost(dingdingUrl, body, header);*/
-					//HttpClientUtils.sendDingding(dingdingUrl, mongoResult, requestUrl);
-					
 				}
 			}
 			logger.info("------存入redis成功------");
@@ -109,13 +102,6 @@ public class OperationController {
 					
 					logger.info("----接口报错：发送钉钉报警----");
 					logger.info("----接口请求地址----"+requestUrl);
-					/*String str="{\\\"error\\\":\\\""+jsonobj.getString("error")+"\\\",\\\"code\\\":\\\""+jsonobj.getInteger("code")+"\\\"}";
-					String content = requestUrl+str;
-					String body = "{\"text\":\""+content+"\"}";
-					String header = "{\"Content-Type\":\"application/json\"}";
-					HttpClientUtils.doPost(dingdingUrl, body, header);*/
-					//HttpClientUtils.sendDingding(dingdingUrl, resultRedis, requestUrl);
-					
 				}
 			}
 		}
