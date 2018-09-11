@@ -51,9 +51,8 @@ public class ActiveState implements Serializable{
 	public void setOnlineTime(long onlineTime) {
 		this.onlineTime = onlineTime;
 	}
-	public ActiveState(String _id, String activeId, Date latestStatistical, long onlineTime) {
+	public ActiveState(String activeId, Date latestStatistical, long onlineTime) {
 		super();
-		this._id = _id;
 		this.activeId = activeId;
 		this.latestStatistical = latestStatistical;
 		this.onlineTime = onlineTime;
@@ -61,5 +60,7 @@ public class ActiveState implements Serializable{
 	public ActiveState() {
 		super();
 	}
+	
+	
 	
 }

@@ -43,7 +43,7 @@ public class ActiveStateServiceImpl implements ActiveStateService{
 		Calendar cal = Calendar.getInstance();
 		int year = cal.get(Calendar.YEAR);
 		int month = cal.get(Calendar.MONTH)+1;
-		int day = cal.get(Calendar.DAY_OF_MONTH);
+		int day = cal.get(Calendar.DAY_OF_MONTH)-1;
 		String nowDate = month<10?year+"0"+month:year+month+"";
 		nowDate = day<10?nowDate+"0"+day:nowDate+day;
 		Query query = new Query();
@@ -65,7 +65,7 @@ public class ActiveStateServiceImpl implements ActiveStateService{
 		Calendar cal = Calendar.getInstance();
 		int year = cal.get(Calendar.YEAR);
 		int month = cal.get(Calendar.MONTH)+1;
-		int day = cal.get(Calendar.DAY_OF_MONTH);
+		int day = cal.get(Calendar.DAY_OF_MONTH)-1;
 		String nowDate = month<10?year+"0"+month:year+month+"";
 		nowDate = day<10?nowDate+"0"+day:nowDate+day;
 		//将时间转为毫秒

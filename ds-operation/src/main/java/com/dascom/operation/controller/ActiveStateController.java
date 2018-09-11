@@ -63,10 +63,6 @@ public class ActiveStateController {
 			String runTime = FormatDate.formatDuring(onlineTime);
 			resultMap.put(activeId, runTime);
 		}
-		
-		 
-
-		
 		return resultMap;
 	}
 
