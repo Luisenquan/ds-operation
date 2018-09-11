@@ -39,6 +39,7 @@ public class OpenidStatisticsServiceImpl implements OpenidStatisticsService{
 	@Override
 	public Map<Object,Object> getOpenidStatisticsPerMonth() {
 		Map<Object,Object> resultMap = new HashMap<Object,Object>();
+		OpenidStatisticsParMonth openidBean;
 		Calendar cal = Calendar.getInstance();
 		int year = cal.get(Calendar.YEAR);
 		int month = cal.get(Calendar.MONTH)+1;
@@ -56,10 +57,10 @@ public class OpenidStatisticsServiceImpl implements OpenidStatisticsService{
 				int printTotal = Integer.parseInt(obj.get("printTotal").toString());
 				int openidPerMonth = Integer.parseInt(obj.get("openidPerMonth").toString());
 				int newOpenidPerMonth = Integer.parseInt(obj.get("newOpenidPerMonth").toString());
-				OpenidStatisticsParMonth openidBean = new OpenidStatisticsParMonth(printTotal, openidPerMonth, newOpenidPerMonth);
+				openidBean = new OpenidStatisticsParMonth(printTotal, openidPerMonth, newOpenidPerMonth);
 				resultMap.put(pat, openidBean);
 			}else {
-				resultMap.put(pat, 0);
+				resultMap.put(pat, new OpenidStatisticsParMonth(0, 0, 0));
 			}
 		}
 		return resultMap;
