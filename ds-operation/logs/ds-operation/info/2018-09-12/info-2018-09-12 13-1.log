@@ -1,0 +1,27 @@
+2018-09-12 13:58:23 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-12 13:58:23 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-12 13:58:54 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-12 13:58:54 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-12 13:58:54 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-12 13:58:54 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-12 13:58:54 INFO [OperationController.java:87] - ------从redis中读取数据！------
+2018-09-12 13:58:55 INFO [OperationController.java:99] - ----接口报错：发送邮箱报警----
+2018-09-12 13:58:55 INFO [OperationController.java:100] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-12 13:58:55 INFO [OperationController.java:103] - ----接口报错：发送钉钉报警----
+2018-09-12 13:58:55 INFO [OperationController.java:104] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-12 13:58:55 INFO [OperationController.java:109] - 总耗时：1776
+2018-09-12 13:58:55 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-12 13:59:19 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-12 13:59:19 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-12 13:59:19 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-12 13:59:19 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-12 13:59:19 INFO [OperationController.java:64] - ------从mongodb中读取数据------
+2018-09-12 13:59:19 INFO [OperationController.java:67] - ------redis没有数据，从mongodb中导入------
+2018-09-12 13:59:19 INFO [OperationController.java:77] - ----接口报错：发送邮箱报警----
+2018-09-12 13:59:19 INFO [OperationController.java:78] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-12 13:59:19 INFO [OperationController.java:82] - ----接口报错：发送钉钉报警----
+2018-09-12 13:59:19 INFO [OperationController.java:85] - ------存入redis成功------
+2018-09-12 13:59:19 INFO [OperationController.java:109] - 总耗时：482
+2018-09-12 13:59:19 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-12 13:59:54 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-12 13:59:54 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------

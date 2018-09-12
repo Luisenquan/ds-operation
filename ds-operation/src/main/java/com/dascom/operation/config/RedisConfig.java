@@ -7,6 +7,7 @@ import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 
@@ -47,12 +48,15 @@ public class RedisConfig extends CachingConfigurerSupport{
     @Value("${spring.redis.password}")
     private String password;
     
-    @Value("${spring.redis.database}")
-    private int db;
+    @Value("${spring.redis.interface.database}")
+    private int interfacedb;
+    
+    @Value("${spring.redis.printer.database}")
+    private int printerdb;
     
    
-    
-    @Bean
+    @Primary
+    @Bean(name="interfaceRedis")
     public RedisConnectionFactory redisConnectionFactory() {
     	JedisPoolConfig poolConfig = new JedisPoolConfig();
     	poolConfig.setMaxIdle(maxIdle);
@@ -61,12 +65,23 @@ public class RedisConfig extends CachingConfigurerSupport{
     	jedisConnectionFactory.setHostName(host);
     	jedisConnectionFactory.setPort(port);
     	jedisConnectionFactory.setPassword(password);
-    	jedisConnectionFactory.setDatabase(db);
-    	logger.info("------JedisPool注入成功！------");
-    	logger.info("------redis地址:"+host+":"+port+"------");
+    	jedisConnectionFactory.setDatabase(interfacedb);
     	return jedisConnectionFactory;
     }
     
+    
+    @Bean(name="printerRedis")
+    public RedisConnectionFactory printerConnectionFactory() {
+    	JedisPoolConfig poolConfig = new JedisPoolConfig();
+    	poolConfig.setMaxIdle(maxIdle);
+    	poolConfig.setMaxWaitMillis(maxWaitMillis);
+    	JedisConnectionFactory jedisConnectionFactory = new JedisConnectionFactory(poolConfig);
+    	jedisConnectionFactory.setHostName(host);
+    	jedisConnectionFactory.setPort(port);
+    	jedisConnectionFactory.setPassword(password);
+    	jedisConnectionFactory.setDatabase(printerdb);
+    	return jedisConnectionFactory;
+    }
     
     
     

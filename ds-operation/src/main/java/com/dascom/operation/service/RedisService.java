@@ -19,4 +19,7 @@ public interface RedisService {
 	//Use redis pipeline
 	Map<String, Map<String, String>> hgetByPipeline();
 	
+	//查询所有打印机状态
+	Map<String, String> getPrinterState();
+	
 }

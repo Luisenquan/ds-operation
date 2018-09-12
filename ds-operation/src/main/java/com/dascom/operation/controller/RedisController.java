@@ -19,4 +19,9 @@ public class RedisController {
 		return redisService.getAllHash();
 	}
 	
+	@RequestMapping("getPrinterStatus")
+	public Map<String, String> getPrinterState(){
+		return redisService.getPrinterState();
+	}
+	
 }

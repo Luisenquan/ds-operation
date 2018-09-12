@@ -77,7 +77,7 @@ public class OperationController {
 					logger.info("----接口报错：发送邮箱报警----");
 					logger.info("----接口请求地址----"+requestUrl);
 					
-					HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
+					//HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
 					
 					logger.info("----接口报错：发送钉钉报警----");
 				}
@@ -98,7 +98,7 @@ public class OperationController {
 					JSONObject jsonobj=JSONObject.parseObject(resultLine);
 					logger.info("----接口报错：发送邮箱报警----");
 					logger.info("----接口请求地址----"+requestUrl);
-					HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
+					//HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
 					
 					logger.info("----接口报错：发送钉钉报警----");
 					logger.info("----接口请求地址----"+requestUrl);
