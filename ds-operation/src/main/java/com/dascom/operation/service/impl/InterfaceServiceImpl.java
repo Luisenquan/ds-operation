@@ -24,8 +24,6 @@ import com.dascom.operation.service.InterfaceService;
 @Component("interfaceService")
 public class InterfaceServiceImpl implements InterfaceService{
 	
-	@Value("${email}")
-	private String emailUrl;
 	
 	@Autowired
 	@Qualifier("operationMongoTemplate")

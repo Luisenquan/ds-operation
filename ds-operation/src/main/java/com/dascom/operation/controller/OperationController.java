@@ -30,12 +30,6 @@ import com.dascom.operation.vo.ResultVO;
 @RestController
 public class OperationController {
 	
-	@Value("${email}")
-	String emailUrl;
-	
-	@Value("${dingding}")
-	String dingdingUrl;
-	
 	private static final Logger logger = LogManager.getLogger(OperationController.class);
 	
 	@Autowired
@@ -74,12 +68,12 @@ public class OperationController {
 				if(resultCode>=400) {
 					String requestUrl = inter.getRequestUrl();
 					String resultLine = mongoResult.get("resultLine").toString();
-					logger.info("----接口报错：发送邮箱报警----");
+					/*logger.info("----接口报错：发送邮箱报警----");
 					logger.info("----接口请求地址----"+requestUrl);
 					
 					//HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
 					
-					logger.info("----接口报错：发送钉钉报警----");
+					logger.info("----接口报错：发送钉钉报警----");*/
 				}
 			}
 			logger.info("------存入redis成功------");
@@ -96,12 +90,12 @@ public class OperationController {
 					String requestUrl = interMap.get("requestUrl");
 					String resultLine = resultRedis.get("resultLine").toString();
 					JSONObject jsonobj=JSONObject.parseObject(resultLine);
-					logger.info("----接口报错：发送邮箱报警----");
+					/*logger.info("----接口报错：发送邮箱报警----");
 					logger.info("----接口请求地址----"+requestUrl);
 					//HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
 					
 					logger.info("----接口报错：发送钉钉报警----");
-					logger.info("----接口请求地址----"+requestUrl);
+					logger.info("----接口请求地址----"+requestUrl);*/
 				}
 			}
 		}

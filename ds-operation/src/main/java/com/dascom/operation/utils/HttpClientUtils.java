@@ -253,7 +253,7 @@ public class HttpClientUtils {
 	 * @param code
 	 * @param resultLine
 	 */
-	public static void sendEmail(String emailUrl, String interfaceName, int code, String resultLine) {
+	/*public static void sendEmail(String emailUrl, String interfaceName, int code, String resultLine) {
 
 		try {
 			client = HttpClients.createDefault();
@@ -261,10 +261,10 @@ public class HttpClientUtils {
 			MultipartEntityBuilder builder = MultipartEntityBuilder.create();
 
 			// 测试
-			/*
+			
 			 * builder.addTextBody("sender", "qnm123456"); builder.addTextBody("password",
 			 * "qnm123456Gzds1130");
-			 */
+			 
 			builder.addTextBody("sender", "e10001");
 			builder.addTextBody("password", "Gzds1130");
 			builder.addTextBody("recipient", "522267533@qq.com");
@@ -287,9 +287,9 @@ public class HttpClientUtils {
 			logger.error("----调用IO错误----" + e.getStackTrace().toString());
 			e.printStackTrace();
 		}
-	}
+	}*/
 
-	public static void sendDingding(String dingdingUrl, Map<String, Object> resultMap, String requestUrl) {
+	/*public static void sendDingding(String dingdingUrl, Map<String, Object> resultMap, String requestUrl) {
 
 		try {
 			client = HttpClients.createDefault();
@@ -318,6 +318,6 @@ public class HttpClientUtils {
 		} catch (IOException e) {
 			logger.error("----调用IO错误----"+e.getStackTrace().toString());
 		}
-	}
+	}*/
 
 }
