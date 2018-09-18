@@ -96,6 +96,8 @@ public class OperationScheduled {
 		}
 	}
 
+	
+	//定时统计openid
 	@Scheduled(cron = "59 59 23 * * ?")
 	public void openidScheduled() {
 		// 统计openid总数

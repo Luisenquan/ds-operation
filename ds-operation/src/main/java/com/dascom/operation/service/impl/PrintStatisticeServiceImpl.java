@@ -145,6 +145,7 @@ public class PrintStatisticeServiceImpl implements PrintStatisticeService{
 	 */
 	@Override
 	public Map<String, Integer> totalPrintWithPerMonth() {
+		Query query = new Query();
 		Map<String,Integer> resultMap = new HashMap<String,Integer>();
 		//获取当前系统的月份
 		Calendar cal = Calendar.getInstance();

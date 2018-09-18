@@ -43,8 +43,19 @@ public class ColletionPrintersServiceImpl implements CollectionPrintersService {
 
 	// 统计每日设备上线数
 	@Override
-	public List<CollectionPrinterActiveStatistics> getOnlineDevice() {
-		return cloudDeviceMongoTemplate.findAll(CollectionPrinterActiveStatistics.class);
+	public Map<String,Object> getOnlineDevice(int pageNum) {
+		int pageSize = 10;
+		Map<String,Object> resultMap = new HashMap<String,Object>();
+		Query query = new Query();
+		query.skip((pageNum-1)*pageSize).limit(pageSize);
+		//计算总页数
+		long sum = cloudDeviceMongoTemplate.count(query, CollectionPrinterActiveStatistics.class);
+		int totalPage = (int) (sum % pageSize==0?sum/pageSize:(sum/pageSize)+1);
+		List<CollectionPrinterActiveStatistics> dataList = cloudDeviceMongoTemplate.find(query, CollectionPrinterActiveStatistics.class);
+		resultMap.put("totalPage", totalPage);
+		resultMap.put("data", dataList);
+		return resultMap;
+		//return cloudDeviceMongoTemplate.findAll(CollectionPrinterActiveStatistics.class);
 	}
 
 	@Override

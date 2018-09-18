@@ -1,8 +1,6 @@
 package com.dascom.operation.service.impl;
 
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,14 +10,13 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
-import com.dascom.operation.entity.OpenidStatistics;
 import com.dascom.operation.entity.OpenidStatisticsParMonth;
 import com.dascom.operation.entity.OperationOpenidStatistics;
 import com.dascom.operation.service.OpenidStatisticsService;
 import com.dascom.operation.utils.AggreationWithResult;
-import com.dascom.operation.utils.FormatDate;
 import com.mongodb.DBObject;
 
 @Component("openidStatisticsService")
@@ -30,8 +27,18 @@ public class OpenidStatisticsServiceImpl implements OpenidStatisticsService{
 	MongoTemplate operationMongoTemplate;
 
 	@Override
-	public List<OperationOpenidStatistics> getOpenidStatistics() {
-		return operationMongoTemplate.findAll(OperationOpenidStatistics.class);
+	public Map<String,Object> getOpenidStatistics(int pageNum) {
+		Map<String,Object> resultMap = new HashMap<String,Object>();
+		int pageSize = 10;
+		Query query = new Query();
+		query.skip((pageNum-1)*pageSize).limit(pageSize);
+		//计算总页数
+		long sum = operationMongoTemplate.count(query, OperationOpenidStatistics.class);
+		int totalPage = (int)(sum%pageSize==0?sum/pageSize:sum/pageSize+1);
+		List<OperationOpenidStatistics> dataList = operationMongoTemplate.findAll(OperationOpenidStatistics.class);
+		resultMap.put("totalPage", totalPage);
+		resultMap.put("data", dataList);
+		return resultMap;
 	}
 	
 	private AggreationWithResult result = new AggreationWithResult();

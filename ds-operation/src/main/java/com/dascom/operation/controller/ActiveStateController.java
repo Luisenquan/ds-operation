@@ -26,43 +26,22 @@ public class ActiveStateController {
 	@Autowired
 	private ActiveStateService activeStateService;
 	
-	@RequestMapping("active")
-	public List<ActiveState> getAll(){
-		return activeStateService.getAll();
-	}
-	
-	
-	
-	@RequestMapping("getNowDay")
-	public List<ActiveState> nowDay(){
-		//activeStateService.getOnline();
-		return activeStateService.getByNowDay();
-	}
 	
 	
 	//获取活跃设备（可按时长查询）
 	@RequestMapping(value="getActiveDevice",method=RequestMethod.GET)
-	public Map<String,String> getActive(@RequestParam(defaultValue="0") double time){
-
-		
+	public Map<String,Object> getActive(@RequestParam(defaultValue="0") double time,@RequestParam(defaultValue="1") int pageNum){
 		//查询设备在线时长
 		Calendar cal = Calendar.getInstance();
 		String year = String.valueOf(cal.get(Calendar.YEAR));
-		Map<String,String>resultMap = new HashMap<String,String>();
-		List<ActiveState> actives = new ArrayList<ActiveState>();
+		Map<String,Object>resultMap = new HashMap<String,Object>();
 		if(time==0) {
-			actives = activeStateService.getByNowDay();
+			resultMap = activeStateService.getByNowDay(pageNum);
 		}else {
-			actives = activeStateService.getActiveDevice(time);
+			resultMap = activeStateService.getActiveDevice(time,pageNum);
 		}
 		
-		for(ActiveState active : actives) {
-			String activeId = active.getActiveId();
-			activeId = activeId.substring(0, activeId.indexOf(year));
-			long onlineTime = active.getOnlineTime();
-			String runTime = FormatDate.formatDuring(onlineTime);
-			resultMap.put(activeId, runTime);
-		}
+		
 		return resultMap;
 	}
 

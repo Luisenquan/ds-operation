@@ -1,13 +1,12 @@
 package com.dascom.operation.controller;
 
-import java.util.List;
+
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.dascom.operation.entity.OperationOpenidStatistics;
 import com.dascom.operation.service.OpenidStatisticsService;
 
 @RestController
@@ -17,8 +16,8 @@ public class OpenidController {
 	private OpenidStatisticsService openidStatisticsService;
 	
 	@RequestMapping("findOpenidByDay")
-	public List<OperationOpenidStatistics> findByDay(){
-		return openidStatisticsService.getOpenidStatistics();
+	public Map<String,Object> findByDay(@RequestParam(defaultValue="1")int pageNum){
+		return openidStatisticsService.getOpenidStatistics(pageNum);
 	}
 	
 	@RequestMapping("findOpenidByMonth")

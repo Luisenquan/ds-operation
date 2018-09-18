@@ -1,0 +1,59 @@
+2018-09-14 10:04:37 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:04:37 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-14 10:04:37 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:04:37 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:04:37 INFO [WebLogAspect.java:48] - 参数:pageNum,值:2
+2018-09-14 10:04:37 INFO [WebLogAspect.java:48] - 参数:pageSize,值:2
+2018-09-14 10:04:37 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:05:20 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:05:20 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-14 10:05:20 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:05:20 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:05:20 INFO [WebLogAspect.java:48] - 参数:pageNum,值:1
+2018-09-14 10:05:20 INFO [WebLogAspect.java:48] - 参数:pageSize,值:2
+2018-09-14 10:05:20 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:05:29 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:05:29 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-14 10:05:29 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:05:29 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:05:29 INFO [WebLogAspect.java:48] - 参数:pageNum,值:2
+2018-09-14 10:05:29 INFO [WebLogAspect.java:48] - 参数:pageSize,值:2
+2018-09-14 10:05:29 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:05:35 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:05:35 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-14 10:05:35 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:05:35 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:05:35 INFO [WebLogAspect.java:48] - 参数:pageNum,值:3
+2018-09-14 10:05:35 INFO [WebLogAspect.java:48] - 参数:pageSize,值:2
+2018-09-14 10:05:35 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:13:02 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:13:02 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-14 10:13:02 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:13:02 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:13:02 INFO [WebLogAspect.java:48] - 参数:pageNum,值:3
+2018-09-14 10:13:02 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:13:10 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:13:10 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-14 10:13:10 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:13:10 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:13:10 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:13:39 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:13:39 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-14 10:13:39 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:13:39 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:13:39 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:16:13 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:16:13 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-14 10:16:13 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:16:13 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:16:13 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:38:19 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:38:19 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getByNowDay
+2018-09-14 10:38:19 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:38:19 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:38:19 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-14 10:52:15 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-14 10:52:15 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getByNowDay
+2018-09-14 10:52:15 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-14 10:52:15 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-14 10:52:15 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

@@ -14,7 +14,7 @@ public interface CollectionPrintersService {
 	
 	
 	//统计每日设备上线数
-	List<CollectionPrinterActiveStatistics> getOnlineDevice();
+	Map<String,Object> getOnlineDevice(int skip);
 	
 	//统计每月设备登陆数
 	Map<String,Integer> getOnlinePerMonth();
