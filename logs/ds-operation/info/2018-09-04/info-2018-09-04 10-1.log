@@ -1,0 +1,147 @@
+2018-09-04 10:21:48 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:21:48 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:24:20 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:24:20 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:24:20 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:24:20 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:25:17 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:25:17 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:25:18 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:25:18 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:25:18 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:25:18 INFO [WebLogAspect.java:44] - IP : 127.0.0.1
+2018-09-04 10:25:47 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:25:47 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:35:04 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:35:04 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:35:10 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:35:10 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:35:10 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:35:10 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:35:10 INFO [OperationController.java:91] - false
+2018-09-04 10:35:10 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:35:32 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:35:32 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:35:32 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:35:32 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:35:32 INFO [OperationController.java:91] - false
+2018-09-04 10:35:32 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:38:20 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:38:20 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:38:24 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:38:24 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:38:24 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:38:24 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:38:24 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:39:13 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:39:13 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:39:17 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:39:17 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:39:17 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:39:17 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:39:17 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:40:46 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:40:46 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:40:54 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:40:54 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:40:54 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:40:54 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:40:54 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:41:12 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:41:12 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:41:16 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:41:16 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:41:16 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:41:16 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:41:16 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:41:35 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:41:35 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:41:38 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:41:38 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:41:38 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:41:38 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:41:38 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:42:00 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:42:00 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:42:04 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:42:04 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:42:04 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:42:04 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:42:04 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:42:31 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:42:31 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:42:33 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:42:33 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:42:33 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:42:33 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:43:26 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:43:26 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:43:34 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:43:34 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:43:38 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:43:38 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:43:38 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:43:38 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:43:38 INFO [OperationController.java:91] - null
+2018-09-04 10:43:38 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:44:45 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:44:45 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:44:50 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:44:50 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:44:50 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:44:50 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:45:03 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:45:03 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:45:09 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:45:09 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:45:09 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:45:09 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:45:31 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:45:31 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:45:35 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:45:35 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:45:35 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:45:35 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:45:54 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:45:54 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:45:55 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:45:55 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:45:55 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:45:55 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:49:09 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:49:09 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:49:15 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:49:15 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:49:15 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:49:15 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:49:15 INFO [OperationController.java:91] - false
+2018-09-04 10:49:15 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:50:37 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:50:37 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:50:45 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:50:45 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:50:45 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:50:45 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:50:45 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:51:15 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:51:15 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:51:28 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:51:28 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:52:16 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:52:16 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:52:29 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:52:29 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:52:29 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:52:29 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:52:29 INFO [OperationController.java:94] - 缺少参数
+2018-09-04 10:52:29 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 10:56:34 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:56:34 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:56:50 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-04 10:56:50 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-04 10:59:07 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 10:59:07 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/addInter
+2018-09-04 10:59:07 INFO [WebLogAspect.java:42] - 请求方法 : POST
+2018-09-04 10:59:07 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 10:59:07 INFO [OperationController.java:92] - 缺少参数
+2018-09-04 10:59:07 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

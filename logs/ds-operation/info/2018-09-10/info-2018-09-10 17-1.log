@@ -1,0 +1,13 @@
+2018-09-10 17:10:24 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 17:10:24 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------
+2018-09-10 17:10:30 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-10 17:10:30 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getActiveDevice
+2018-09-10 17:10:30 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-10 17:10:30 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-10 17:10:30 INFO [WebLogAspect.java:48] - 参数:time,值:0.5
+2018-09-10 17:10:30 INFO [ActiveStateServiceImpl.java:66] - {"id":"ae3a9d0b-edc2-4836-b6ad-6fe42b21477e"}
+2018-09-10 17:10:30 INFO [ActiveStateServiceImpl.java:68] - {"Content-Type":"application/json"}
+2018-09-10 17:10:31 INFO [ActiveStateServiceImpl.java:73] - -------请求成功！查询数据库------
+2018-09-10 17:10:34 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-10 17:12:52 INFO [RedisConfig.java:65] - ------JedisPool注入成功！------
+2018-09-10 17:12:52 INFO [RedisConfig.java:66] - ------redis地址:118.126.91.157:6379------

@@ -1,0 +1,10 @@
+2018-09-05 14:06:37 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-05 14:06:37 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/monthlyStatistics
+2018-09-05 14:06:37 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-05 14:06:37 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-05 14:06:37 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-05 14:11:38 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-05 14:11:38 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/monthlyStatistics
+2018-09-05 14:11:38 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-05 14:11:38 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-05 14:11:38 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

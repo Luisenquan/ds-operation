@@ -1,0 +1,43 @@
+2018-09-03 09:26:23 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 09:26:23 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 09:27:00 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 09:27:00 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrintDate
+2018-09-03 09:27:00 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 09:27:00 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 09:27:00 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 09:27:34 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 09:27:34 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 09:27:47 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 09:27:47 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrintDate
+2018-09-03 09:27:47 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 09:27:47 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 09:35:01 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 09:35:01 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 09:35:11 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 09:35:11 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrintDate
+2018-09-03 09:35:11 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 09:35:11 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 09:44:28 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 09:44:28 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 09:44:38 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 09:44:38 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrintDate
+2018-09-03 09:44:38 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 09:44:38 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 09:50:54 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 09:50:54 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 09:51:04 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 09:51:04 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOpenidNowDay
+2018-09-03 09:51:04 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 09:51:04 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 09:51:04 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 09:51:22 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-03 09:51:22 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOpenidNowDay
+2018-09-03 09:51:22 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-03 09:51:22 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-03 09:51:22 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-03 09:53:10 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 09:53:10 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 09:54:17 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 09:54:17 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------
+2018-09-03 09:59:48 INFO [RedisConfig.java:66] - ------JedisPool注入成功！------
+2018-09-03 09:59:48 INFO [RedisConfig.java:67] - ------redis地址:127.0.0.1:6379------

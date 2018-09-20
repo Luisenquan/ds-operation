@@ -1,0 +1,53 @@
+2018-09-18 10:01:46 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:01:46 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:01:46 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:01:46 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:02:37 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:02:37 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:02:37 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:02:37 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:02:38 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-18 10:03:42 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:03:42 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:03:42 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:03:42 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:03:43 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-18 10:06:48 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:06:48 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:06:48 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:06:48 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:06:48 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-18 10:07:02 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:07:02 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:07:02 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:07:02 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:07:02 INFO [WebLogAspect.java:48] - 参数:printStatus,值:dead
+2018-09-18 10:07:18 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:07:18 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:07:18 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:07:18 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:07:18 INFO [WebLogAspect.java:48] - 参数:printStatus,值:dead
+2018-09-18 10:07:19 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-18 10:14:45 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:14:45 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:14:45 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:14:45 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:14:45 INFO [WebLogAspect.java:48] - 参数:printStatus,值:dead
+2018-09-18 10:14:50 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:14:50 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:14:50 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:14:50 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:14:54 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:14:54 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:14:54 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:14:54 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:15:46 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:15:46 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:15:46 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:15:46 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:15:47 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-18 10:21:52 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-18 10:21:52 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-18 10:21:52 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-18 10:21:52 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-18 10:21:53 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

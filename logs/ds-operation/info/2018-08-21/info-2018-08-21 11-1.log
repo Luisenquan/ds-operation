@@ -1,0 +1,2 @@
+2018-08-21 11:37:47 INFO [JedisConfig.java:47] - -----JedisPool注入成功！-----
+2018-08-21 11:37:47 INFO [JedisConfig.java:48] - -----redis地址：127.0.0.1:6379-----

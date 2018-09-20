@@ -1,0 +1,10 @@
+2018-09-04 12:59:00 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 12:59:00 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/printWithEachMonth
+2018-09-04 12:59:00 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-04 12:59:00 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 12:59:01 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-04 12:59:53 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-04 12:59:53 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getAllDevice
+2018-09-04 12:59:53 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-04 12:59:53 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-04 12:59:54 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

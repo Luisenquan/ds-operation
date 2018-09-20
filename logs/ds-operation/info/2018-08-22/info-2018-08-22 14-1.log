@@ -1,0 +1,15 @@
+2018-08-22 14:10:49 INFO [RedisServiceImpl.java:52] - {headerParameter=123, method=get, requestUrl=/v1.0/common/user, jsonParameter=123, postName=autoservice_user, _id=5b7b689737d8b65bec491092, interfaceName=用户--查询用户资料接口, urlParameter=/rainbow}
+2018-08-22 14:11:19 INFO [RedisServiceImpl.java:52] - {headerParameter=, method=get, requestUrl=/v1.0/common/user, jsonParameter=, postName=autoservice_user, _id=5b7b689737d8b65bec491092, interfaceName=用户--查询用户资料接口, urlParameter=/rainbow}
+2018-08-22 14:13:04 INFO [RedisServiceImpl.java:53] - {headerParameter=, method=get, requestUrl=/v1.0/common/user, jsonParameter=, postName=autoservice_user, _id=5b7b689737d8b65bec491092, interfaceName=用户--查询用户资料接口, urlParameter=/rainbow}
+2018-08-22 14:23:08 INFO [InterfaceController.java:38] - redis没有数据，从mongodb中导入
+2018-08-22 14:23:08 INFO [InterfaceController.java:43] - 存入redis成功
+2018-08-22 14:23:27 INFO [InterfaceController.java:45] - 从redis中读取数据！
+2018-08-22 14:23:27 INFO [InterfaceController.java:47] - {用户--查询用户资料接口={postName=autoservice_user, urlParameter=/rainbow, method=get, headerParameter=, interfaceName=用户--查询用户资料接口, jsonParameter=, requestUrl=/v1.0/common/user, _id=5b7b689737d8b65bec491092}, 用户--用户登陆接口={headerParameter={"Content-Type":"application/json"}, jsonParameter={"user":"rainbow","pwd":"12345678"}, urlParameter=, method=post, requestUrl=/v1.0/common/session, postName=autoservice_user, _id=5b7b691e37d8b65bec4910a9, interfaceName=用户--用户登陆接口}}
+2018-08-22 14:23:39 INFO [InterfaceController.java:45] - 从redis中读取数据！
+2018-08-22 14:23:39 INFO [InterfaceController.java:47] - {用户--查询用户资料接口={method=get, jsonParameter=, requestUrl=/v1.0/common/user, headerParameter=, _id=5b7b689737d8b65bec491092, postName=autoservice_user, interfaceName=用户--查询用户资料接口, urlParameter=/rainbow}, 用户--用户登陆接口={jsonParameter={"user":"rainbow","pwd":"12345678"}, _id=5b7b691e37d8b65bec4910a9, requestUrl=/v1.0/common/session, interfaceName=用户--用户登陆接口, headerParameter={"Content-Type":"application/json"}, urlParameter=, postName=autoservice_user, method=post}}
+2018-08-22 14:40:24 INFO [InterfaceController.java:40] - redis没有数据，从mongodb中导入
+2018-08-22 14:40:24 INFO [InterfaceController.java:45] - 存入redis成功
+2018-08-22 14:40:24 INFO [InterfaceController.java:52] - 总耗时：31
+2018-08-22 14:40:53 INFO [InterfaceController.java:47] - 从redis中读取数据！
+2018-08-22 14:40:53 INFO [InterfaceController.java:49] - {user_userLogin={postName=autoservice_user, headerParameter={"Content-Type":"application/json"}, _id=5b7b691e37d8b65bec4910a9, note=用户--用户登陆接口, method=post, urlParameter=, requestUrl=/v1.0/common/session, jsonParameter={"user":"rainbow","pwd":"12345678"}, interfaceName=user_userLogin}, user_checkUserInfo={note=用户--查询用户资料接口, urlParameter=/rainbow, requestUrl=/v1.0/common/user, jsonParameter=, headerParameter=, postName=autoservice_user, interfaceName=user_checkUserInfo, _id=5b7b689737d8b65bec491092, method=get}}
+2018-08-22 14:40:53 INFO [InterfaceController.java:52] - 总耗时：3
