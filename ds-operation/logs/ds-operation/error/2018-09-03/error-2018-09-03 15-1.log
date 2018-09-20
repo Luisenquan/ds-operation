@@ -1,2 +1,0 @@
-2018-09-03 15:19:35 ERROR [ActiveStateServiceImpl.java:69] - ------请求失败！错误码：404------
-2018-09-03 15:19:35 ERROR [ActiveStateServiceImpl.java:70] - ------失败原因------{"timestamp":1535959092020,"status":404,"error":"Not Found","message":"No message available","path":"/v1.0/device/statistics_online"}

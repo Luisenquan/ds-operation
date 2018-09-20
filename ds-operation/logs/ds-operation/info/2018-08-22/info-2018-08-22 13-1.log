@@ -1,3 +1,0 @@
-2018-08-22 13:52:07 INFO [RedisServiceImpl.java:46] - {headerParameter=null, method=get, requestUrl=/v1.0/common/user, jsonParameter=null, postName=autoservice_user, _id=5b7b689737d8b65bec491092, interfaceName=用户--查询用户资料接口, urlParameter=/rainbow}
-2018-08-22 13:53:30 INFO [RedisServiceImpl.java:46] - {sex=man, name=lui, age=20}
-2018-08-22 13:57:18 INFO [RedisServiceImpl.java:46] - {sex=null, name=null, age=null}

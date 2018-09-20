@@ -1,7 +1,0 @@
-2018-09-05 17:33:32 INFO [RedisConfig.java:57] - ------JedisPool注入成功！------
-2018-09-05 17:33:32 INFO [RedisConfig.java:58] - ------redis地址:192.168.11.118:6379------
-2018-09-05 17:33:47 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
-2018-09-05 17:33:47 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/sendEmail
-2018-09-05 17:33:47 INFO [WebLogAspect.java:42] - 请求方法 : GET
-2018-09-05 17:33:47 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
-2018-09-05 17:33:48 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

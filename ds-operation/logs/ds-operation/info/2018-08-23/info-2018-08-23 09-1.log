@@ -1,7 +1,0 @@
-2018-08-23 09:32:55 INFO [InterfaceController.java:58] - 从redis中读取数据！
-2018-08-23 09:32:55 INFO [RedisJoinPara.java:25] - ------接口地址------：https://test.dascomyun.cn/autoservice_user/v1.0/common/session
-2018-08-23 09:32:55 INFO [RedisJoinPara.java:32] - ------调用post请求----
-2018-08-23 09:32:57 INFO [RedisJoinPara.java:34] - ------请求参数------：{"user":"rainbow","pwd":"12345678"}
-2018-08-23 09:32:57 INFO [RedisJoinPara.java:25] - ------接口地址------：https://test.dascomyun.cn/autoservice_user/v1.0/common/user/rainbow
-2018-08-23 09:32:57 INFO [RedisJoinPara.java:28] - ------调用get请求----
-2018-08-23 09:32:57 INFO [InterfaceController.java:68] - 总耗时：1745
