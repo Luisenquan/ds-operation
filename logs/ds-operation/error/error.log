@@ -1,1 +1,2 @@
-2018-09-12 10:13:02 ERROR [OperationScheduled.java:149] - [Ljava.lang.StackTraceElement;@4dd1aeb6
+2018-09-20 16:01:34 ERROR [HttpClientUtils.java:329] - ----发送失败，错误原因----{"timestamp":1537430370267,"status":500,"error":"Internal Server Error","exception":"java.net.UnknownHostException","message":"java.net.UnknownHostException: oapi.dingtalk.com","path":"/common/dingding/token=dbd32ea6c385aa8cda9025b8fc1ca219"}
+2018-09-20 16:04:45 ERROR [HttpClientUtils.java:334] - ----调用IO错误----[Ljava.lang.StackTraceElement;@3aba17da

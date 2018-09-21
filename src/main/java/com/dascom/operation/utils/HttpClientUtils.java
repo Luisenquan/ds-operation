@@ -29,11 +29,18 @@ import org.apache.http.util.EntityUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
+
+@Component
 public class HttpClientUtils {
+	
+	
+	
+	
 
 	private static final Logger logger = LogManager.getLogger(HttpClientUtils.class);
 
@@ -163,7 +170,7 @@ public class HttpClientUtils {
 		try {
 			client = HttpClients.createDefault();
 			HttpDelete delete = new HttpDelete(url);
-			delete.setConfig(requestConfig);
+			
 			// 设置请求头
 			packageHeader(headerParam, delete);
 			RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(50000).setSocketTimeout(50000)
@@ -289,18 +296,29 @@ public class HttpClientUtils {
 		}
 	}*/
 
-	/*public static void sendDingding(String dingdingUrl, Map<String, Object> resultMap, String requestUrl) {
+	
+	/**
+	 * 钉钉报警
+	 * @param dingdingUrl
+	 * @param resultMap
+	 * @param requestUrl
+	 */
+	public static void sendDingding( String dingdingUrl ,Map<String, Object> resultMap, String requestUrl) {
 
 		try {
 			client = HttpClients.createDefault();
 			HttpPost post = new HttpPost(dingdingUrl);
+			RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(20000).setSocketTimeout(20000)
+					.build();
+			post.setConfig(requestConfig);
 
 			JSONObject jsonParam = new JSONObject();
 			int statusCode = (int) resultMap.get("statusCode"); // http错误码
 			String resultLine = resultMap.get("resultLine").toString(); // 错误信息
 
 			String content = "请求地址:" + requestUrl + "  ----错误信息---- 错误码：" + statusCode + "  ,错误内容：" + resultLine;
-			jsonParam.put("text", content);
+			jsonParam.put("content", content);
+			jsonParam.put("msgtype", "text");
 			StringEntity entity = new StringEntity(jsonParam.toString(), "utf-8");
 			entity.setContentEncoding("UTF-8");
 			entity.setContentType("application/json");
@@ -318,6 +336,6 @@ public class HttpClientUtils {
 		} catch (IOException e) {
 			logger.error("----调用IO错误----"+e.getStackTrace().toString());
 		}
-	}*/
+	}
 
 }

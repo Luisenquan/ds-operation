@@ -38,7 +38,8 @@ public class OperationController {
 	@Autowired
 	private RedisService redisService;
 
-	
+	@Value("${dingdingUrl}")
+	private  String dingdingUrl;
 	
 	
 	
@@ -68,12 +69,10 @@ public class OperationController {
 				if(resultCode>=400) {
 					String requestUrl = inter.getRequestUrl();
 					String resultLine = mongoResult.get("resultLine").toString();
-					/*logger.info("----接口报错：发送邮箱报警----");
-					logger.info("----接口请求地址----"+requestUrl);
 					
-					//HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
-					
-					logger.info("----接口报错：发送钉钉报警----");*/
+					logger.info("----接口报错：发送钉钉报警----");
+					HttpClientUtils.sendDingding(dingdingUrl,mongoResult, requestUrl);
+					logger.info("----错误接口地址----"+requestUrl);
 				}
 			}
 			logger.info("------存入redis成功------");
@@ -89,13 +88,10 @@ public class OperationController {
 				if(resultCode>=400) {
 					String requestUrl = interMap.get("requestUrl");
 					String resultLine = resultRedis.get("resultLine").toString();
-					JSONObject jsonobj=JSONObject.parseObject(resultLine);
-					/*logger.info("----接口报错：发送邮箱报警----");
-					logger.info("----接口请求地址----"+requestUrl);
-					//HttpClientUtils.sendEmail(emailUrl,requestUrl, resultCode, resultLine);
 					
 					logger.info("----接口报错：发送钉钉报警----");
-					logger.info("----接口请求地址----"+requestUrl);*/
+					HttpClientUtils.sendDingding(dingdingUrl,resultRedis, requestUrl);
+					logger.info("----错误接口地址----"+requestUrl);
 				}
 			}
 		}
