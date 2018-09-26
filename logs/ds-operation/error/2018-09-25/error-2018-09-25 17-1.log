@@ -1,0 +1,6 @@
+2018-09-25 17:00:50 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@1de5cc27
+2018-09-25 17:04:31 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@79d3e8b0
+2018-09-25 17:06:45 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@500d6792
+2018-09-25 17:10:32 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@47b97e59
+2018-09-25 17:32:13 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@3848f58a
+2018-09-25 17:34:23 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@7ff5205

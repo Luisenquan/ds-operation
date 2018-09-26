@@ -1,0 +1,5 @@
+2018-09-25 16:02:42 ERROR [TcpHttpUtils.java:56] - ----{"code":1000,"id":null,"data":null}----
+2018-09-25 16:03:32 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@2c84ecd
+2018-09-25 16:09:59 ERROR [TcpHttpUtils.java:56] - ----{"code":1000,"id":null,"data":null}----
+2018-09-25 16:10:47 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@35c020bc
+2018-09-25 16:10:56 ERROR [TcpHttpUtils.java:56] - ----{"code":1011,"id":null,"data":null}----

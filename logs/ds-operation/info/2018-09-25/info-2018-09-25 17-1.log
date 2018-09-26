@@ -1,0 +1,39 @@
+2018-09-25 17:00:43 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 17:00:43 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-25 17:00:43 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 17:00:43 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 17:00:44 INFO [UpdateWifeServiceImpl.java:45] - 进入wifi固件更新模式
+2018-09-25 17:00:45 INFO [UpdateWifeServiceImpl.java:66] - ----设备开始进入版本更新状态，等待版本数据----
+2018-09-25 17:03:09 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 17:03:09 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-25 17:03:09 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 17:03:09 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 17:03:35 INFO [UpdateWifeServiceImpl.java:45] - 进入wifi固件更新模式
+2018-09-25 17:04:54 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 17:04:54 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-25 17:04:54 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 17:04:54 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 17:04:59 INFO [UpdateWifeServiceImpl.java:45] - 进入wifi固件更新模式
+2018-09-25 17:05:01 INFO [UpdateWifeServiceImpl.java:66] - ----设备开始进入版本更新状态，等待版本数据----
+2018-09-25 17:09:10 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 17:09:10 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-25 17:09:10 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 17:09:10 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 17:09:47 INFO [UpdateWifeServiceImpl.java:45] - 进入wifi固件更新模式
+2018-09-25 17:10:56 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 17:10:56 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-25 17:10:56 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 17:10:56 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 17:10:59 INFO [UpdateWifeServiceImpl.java:45] - 进入wifi固件更新模式
+2018-09-25 17:11:02 INFO [UpdateWifeServiceImpl.java:66] - ----设备开始进入版本更新状态，等待版本数据----
+2018-09-25 17:32:07 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 17:32:07 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-25 17:32:07 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 17:32:07 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 17:32:08 INFO [UpdateWifeServiceImpl.java:45] - 进入wifi固件更新模式
+2018-09-25 17:33:02 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 17:33:02 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-25 17:33:02 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 17:33:02 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 17:33:43 INFO [UpdateWifeServiceImpl.java:45] - 进入wifi固件更新模式
+2018-09-25 17:33:46 INFO [UpdateWifeServiceImpl.java:66] - ----设备开始进入版本更新状态，等待版本数据----

@@ -1,0 +1,8 @@
+2018-09-25 14:39:57 ERROR [TcpHttpUtils.java:56] - ----{"code":1000,"id":null,"data":null}----
+2018-09-25 14:45:19 ERROR [TcpHttpUtils.java:56] - ----{"code":1011,"id":null,"data":null}----
+2018-09-25 14:50:26 ERROR [TcpHttpUtils.java:56] - ----{"code":1011,"id":null,"data":null}----
+2018-09-25 14:55:09 ERROR [TcpHttpUtils.java:56] - ----{"code":1011,"id":null,"data":null}----
+2018-09-25 14:55:14 ERROR [TcpHttpUtils.java:56] - ----{"code":1011,"id":null,"data":null}----
+2018-09-25 14:56:54 ERROR [TcpHttpUtils.java:56] - ----{"code":1011,"id":null,"data":null}----
+2018-09-25 14:58:32 ERROR [TcpHttpUtils.java:56] - ----{"code":1011,"id":null,"data":null}----
+2018-09-25 14:59:37 ERROR [TcpHttpUtils.java:64] - ----调用IO错误----[Ljava.lang.StackTraceElement;@53ac8cf9

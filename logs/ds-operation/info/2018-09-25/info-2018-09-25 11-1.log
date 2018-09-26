@@ -1,0 +1,42 @@
+2018-09-25 11:25:05 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:25:06 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:25:06 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:25:06 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:25:46 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:25:46 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:25:46 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:25:46 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:26:24 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:26:24 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:26:24 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:26:24 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:26:27 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:26:27 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:26:27 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:26:27 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:27:39 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:27:39 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:27:39 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:27:39 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:30:21 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:30:21 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:30:21 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:30:21 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:32:12 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:32:12 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:32:12 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:32:12 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:32:35 INFO [UpdateWifeServiceImpl.java:41] - 进入wifi固件更新模式
+2018-09-25 11:32:35 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-25 11:35:54 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:35:54 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:35:54 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:35:54 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:35:55 INFO [UpdateWifeServiceImpl.java:44] - 进入wifi固件更新模式
+2018-09-25 11:35:55 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-25 11:37:33 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 11:37:33 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 11:37:33 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 11:37:33 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 11:38:15 INFO [UpdateWifeServiceImpl.java:44] - 进入wifi固件更新模式
+2018-09-25 11:38:34 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

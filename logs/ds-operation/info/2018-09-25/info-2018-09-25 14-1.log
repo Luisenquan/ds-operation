@@ -1,0 +1,39 @@
+2018-09-25 14:39:11 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 14:39:11 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/sendData
+2018-09-25 14:39:11 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 14:39:11 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 14:39:57 INFO [TcpHttpUtils.java:55] - ----连接数据通道出错，查看错误日志----
+2018-09-25 14:45:14 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 14:45:14 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/sendData
+2018-09-25 14:45:14 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 14:45:14 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 14:45:19 INFO [TcpHttpUtils.java:55] - ----连接数据通道出错，查看错误日志----
+2018-09-25 14:50:26 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 14:50:26 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 14:50:26 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 14:50:26 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 14:50:26 INFO [TcpHttpUtils.java:55] - ----连接数据通道出错，查看错误日志----
+2018-09-25 14:55:09 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 14:55:09 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 14:55:09 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 14:55:09 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 14:55:09 INFO [TcpHttpUtils.java:55] - ----连接数据通道出错，查看错误日志----
+2018-09-25 14:55:14 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 14:55:14 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 14:55:14 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 14:55:14 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 14:55:14 INFO [TcpHttpUtils.java:55] - ----连接数据通道出错，查看错误日志----
+2018-09-25 14:56:54 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 14:56:54 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 14:56:54 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 14:56:54 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 14:56:54 INFO [TcpHttpUtils.java:55] - ----连接数据通道出错，查看错误日志----
+2018-09-25 14:58:32 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 14:58:32 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 14:58:32 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 14:58:32 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-25 14:58:32 INFO [TcpHttpUtils.java:55] - ----连接数据通道出错，查看错误日志----
+2018-09-25 14:59:32 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-25 14:59:32 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/goInto
+2018-09-25 14:59:32 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-25 14:59:32 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1

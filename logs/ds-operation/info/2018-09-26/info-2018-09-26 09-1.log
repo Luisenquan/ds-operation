@@ -1,0 +1,38 @@
+2018-09-26 09:35:39 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 09:35:39 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-26 09:35:39 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 09:35:39 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 09:37:19 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 09:37:19 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-26 09:37:19 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 09:37:19 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 09:39:59 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 09:39:59 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/update
+2018-09-26 09:39:59 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 09:39:59 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 09:40:27 INFO [UpdateWifeServiceImpl.java:45] - 进入wifi固件更新模式
+2018-09-26 09:40:30 INFO [UpdateWifeServiceImpl.java:66] - ----设备开始进入版本更新状态，等待版本数据----
+2018-09-26 09:41:47 INFO [UpdateWifeServiceImpl.java:84] - ----设备已接收到的版本数据正确----
+2018-09-26 09:41:59 INFO [UpdateWifeServiceImpl.java:98] - ----设备已接收完版本数据----
+2018-09-26 09:42:07 INFO [UpdateWifeServiceImpl.java:126] - ----设备重启成功----
+2018-09-26 09:42:15 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 09:52:11 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 09:52:11 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 09:52:11 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 09:52:11 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 09:52:12 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 09:53:41 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 09:53:41 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 09:53:41 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 09:53:41 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 09:53:42 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 09:55:15 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 09:55:16 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 09:55:16 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 09:55:16 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 09:55:16 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 09:58:13 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 09:58:13 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 09:58:13 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 09:58:13 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 09:58:13 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

@@ -1,0 +1,81 @@
+2018-09-20 15:35:52 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:35:52 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-20 15:35:52 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:35:52 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:35:52 INFO [OperationController.java:83] - ------从redis中读取数据！------
+2018-09-20 15:35:52 INFO [OperationController.java:99] - ----接口报错：发送钉钉报警----
+2018-09-20 15:38:42 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:38:42 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getPrinterStatus
+2018-09-20 15:38:42 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:38:42 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:38:43 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:40:18 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:40:18 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:40:18 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:40:18 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:40:18 INFO [WebLogAspect.java:48] - 参数:pageNum,值:2
+2018-09-20 15:40:18 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:40:25 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:40:25 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:40:25 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:40:25 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:40:25 INFO [WebLogAspect.java:48] - 参数:pageNum,值:1
+2018-09-20 15:40:25 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:40:43 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:40:43 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:40:43 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:40:43 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:40:43 INFO [WebLogAspect.java:48] - 参数:pageNum,值:
+2018-09-20 15:40:43 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:40:45 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:40:45 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:40:45 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:40:45 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:40:45 INFO [WebLogAspect.java:48] - 参数:pageNum,值:2
+2018-09-20 15:40:45 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:52:27 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:52:27 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:52:27 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:52:27 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:52:27 INFO [WebLogAspect.java:48] - 参数:pageNum,值:2
+2018-09-20 15:52:27 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:53:22 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:53:22 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:53:22 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:53:22 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:53:22 INFO [WebLogAspect.java:48] - 参数:pageNum,值:2
+2018-09-20 15:53:22 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:55:05 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:55:05 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:55:05 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:55:05 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:55:05 INFO [WebLogAspect.java:48] - 参数:pageNum,值:1
+2018-09-20 15:55:05 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:55:32 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:55:32 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:55:32 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:55:32 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:55:32 INFO [WebLogAspect.java:48] - 参数:pageNum,值:2
+2018-09-20 15:55:32 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:55:48 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:55:48 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:55:48 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:55:48 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:55:48 INFO [WebLogAspect.java:48] - 参数:pageNum,值:2
+2018-09-20 15:55:48 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:55:59 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:55:59 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getOnlineDevice
+2018-09-20 15:55:59 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:55:59 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:55:59 INFO [WebLogAspect.java:48] - 参数:pageNum,值:1
+2018-09-20 15:55:59 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 15:57:51 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:57:51 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-20 15:57:51 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:57:51 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 15:57:51 INFO [OperationController.java:83] - ------从redis中读取数据！------
+2018-09-20 15:57:52 INFO [OperationController.java:99] - ----接口报错：发送钉钉报警----
+2018-09-20 15:59:39 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 15:59:39 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-20 15:59:39 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 15:59:39 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1

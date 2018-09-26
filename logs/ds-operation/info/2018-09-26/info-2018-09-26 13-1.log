@@ -1,0 +1,77 @@
+2018-09-26 13:03:04 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:03:04 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:03:04 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:03:04 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:06:24 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:06:24 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:06:24 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:06:24 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:06:24 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 13:10:13 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:10:13 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:10:13 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:10:13 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:10:38 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:10:38 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:10:38 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:10:38 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:10:39 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 13:14:32 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:14:32 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:14:32 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:14:32 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:14:40 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:14:40 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:14:40 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:14:40 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:14:41 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 13:18:02 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:18:02 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:18:02 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:18:02 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:18:03 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 13:29:28 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:29:28 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:29:28 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:29:28 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:29:33 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:29:33 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:29:33 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:29:33 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:30:08 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:30:08 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:30:08 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:30:08 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:30:12 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:30:12 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:30:12 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:30:12 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:30:12 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 13:32:17 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:32:17 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:32:17 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:32:17 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:32:18 INFO [DeviceServiceImpl.java:47] - ----读取wifi配置成功----WifiConfig [localIpAddress=48.48.48.48, localSubnetMask=48.48.48.48, localGateway=55.49.48.49, remoteServerAddress=57.50.48.101, mainDNSServerAddress=49.48.101.102, slaveDNSServerAddress=56.100.48.48, udpPort=13872, controlPort=24929, dataPort=26214, remoteRouteSsid=ff0a01a8c000ffffff0a01a8c0970ba8c, remoteRoutePassword=07272727273727272204e214e224e545031323300000000000000000000000000, dhcp=48, reconnectionInterval=48, apModelSsid=0000000000000000000000, apModelPassword=0000003132333435, networkMode=51, dataTransmissionSpeed=54, networkChannel=51, dns=55, deviceModel=51, domainName=00000000000000000000000000000000]
+2018-09-26 13:32:18 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 13:38:50 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:38:50 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:38:50 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:38:50 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:38:54 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:38:54 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:38:54 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:38:54 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:38:54 INFO [DeviceServiceImpl.java:47] - ----读取wifi配置成功----WifiConfig [localIpAddress=48.48.48.48, localSubnetMask=48.48.48.48, localGateway=55.49.48.49, remoteServerAddress=57.50.48.101, mainDNSServerAddress=49.48.101.102, slaveDNSServerAddress=56.100.48.48, udpPort=13872, controlPort=24929, dataPort=26214, remoteRouteSsid=ff0a01a8c000ffffff0a01a8c0970ba8c, remoteRoutePassword=07272727273727272204e214e224e545031323300000000000000000000000000, dhcp=48, reconnectionInterval=48, apModelSsid=0000000000000000000000, apModelPassword=0000003132333435, networkMode=51, dataTransmissionSpeed=54, networkChannel=51, dns=55, deviceModel=51, domainName=00000000000000000000000000000000]
+2018-09-26 13:38:54 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 13:39:09 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:39:09 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:39:09 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:39:09 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:39:09 INFO [DeviceServiceImpl.java:47] - ----读取wifi配置成功----WifiConfig [localIpAddress=48.48.48.48, localSubnetMask=48.48.48.48, localGateway=55.49.48.49, remoteServerAddress=57.50.48.101, mainDNSServerAddress=49.48.101.102, slaveDNSServerAddress=56.100.48.48, udpPort=13872, controlPort=24929, dataPort=26214, remoteRouteSsid=ff0a01a8c000ffffff0a01a8c0970ba8c, remoteRoutePassword=07272727273727272204e214e224e545031323300000000000000000000000000, dhcp=48, reconnectionInterval=48, apModelSsid=0000000000000000000000, apModelPassword=0000003132333435, networkMode=51, dataTransmissionSpeed=54, networkChannel=51, dns=55, deviceModel=51, domainName=00000000000000000000000000000000]
+2018-09-26 13:39:09 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-26 13:39:11 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-26 13:39:11 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/readDevice
+2018-09-26 13:39:11 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-26 13:39:11 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-26 13:39:11 INFO [DeviceServiceImpl.java:47] - ----读取wifi配置成功----WifiConfig [localIpAddress=48.48.48.48, localSubnetMask=48.48.48.48, localGateway=55.49.48.49, remoteServerAddress=57.50.48.101, mainDNSServerAddress=49.48.101.102, slaveDNSServerAddress=56.100.48.48, udpPort=13872, controlPort=24929, dataPort=26214, remoteRouteSsid=ff0a01a8c000ffffff0a01a8c0970ba8c, remoteRoutePassword=07272727273727272204e214e224e545031323300000000000000000000000000, dhcp=48, reconnectionInterval=48, apModelSsid=0000000000000000000000, apModelPassword=0000003132333435, networkMode=51, dataTransmissionSpeed=54, networkChannel=51, dns=55, deviceModel=51, domainName=00000000000000000000000000000000]
+2018-09-26 13:39:11 INFO [WebLogAspect.java:56] - ************************请求结束*******************************

@@ -1,0 +1,41 @@
+2018-09-20 16:00:13 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 16:00:13 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-20 16:00:13 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 16:00:13 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 16:00:13 INFO [OperationController.java:84] - ------从redis中读取数据！------
+2018-09-20 16:00:14 INFO [OperationController.java:100] - ----接口报错：发送钉钉报警----
+2018-09-20 16:04:33 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 16:04:33 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-20 16:04:33 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 16:04:33 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 16:04:33 INFO [OperationController.java:84] - ------从redis中读取数据！------
+2018-09-20 16:04:34 INFO [OperationController.java:100] - ----接口报错：发送钉钉报警----
+2018-09-20 16:04:45 INFO [OperationController.java:102] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-20 16:04:45 INFO [OperationController.java:107] - 总耗时：11656
+2018-09-20 16:04:45 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 16:05:39 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 16:05:39 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-20 16:05:39 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 16:05:39 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 16:05:39 INFO [OperationController.java:84] - ------从redis中读取数据！------
+2018-09-20 16:05:40 INFO [OperationController.java:100] - ----接口报错：发送钉钉报警----
+2018-09-20 16:11:48 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 16:11:48 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-20 16:11:48 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 16:11:48 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 16:11:48 INFO [OperationController.java:84] - ------从redis中读取数据！------
+2018-09-20 16:11:48 INFO [OperationController.java:100] - ----接口报错：发送钉钉报警----
+2018-09-20 16:12:35 INFO [HttpClientUtils.java:327] - ----钉钉信息已发送----
+2018-09-20 16:12:39 INFO [OperationController.java:102] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-20 16:12:46 INFO [OperationController.java:107] - 总耗时：56950
+2018-09-20 16:13:07 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
+2018-09-20 16:13:29 INFO [WebLogAspect.java:38] - ************************请求开始*******************************
+2018-09-20 16:13:29 INFO [WebLogAspect.java:40] - 请求地址 : http://localhost:13200/getInterfaceData
+2018-09-20 16:13:29 INFO [WebLogAspect.java:42] - 请求方法 : GET
+2018-09-20 16:13:29 INFO [WebLogAspect.java:44] - IP : 0:0:0:0:0:0:0:1
+2018-09-20 16:13:29 INFO [OperationController.java:84] - ------从redis中读取数据！------
+2018-09-20 16:13:30 INFO [OperationController.java:100] - ----接口报错：发送钉钉报警----
+2018-09-20 16:13:30 INFO [HttpClientUtils.java:327] - ----钉钉信息已发送----
+2018-09-20 16:13:30 INFO [OperationController.java:102] - ----接口请求地址----https://test.dascomyun.cn/autoservice_user/v1.0/common/session
+2018-09-20 16:13:30 INFO [OperationController.java:107] - 总耗时：871
+2018-09-20 16:13:30 INFO [WebLogAspect.java:56] - ************************请求结束*******************************
