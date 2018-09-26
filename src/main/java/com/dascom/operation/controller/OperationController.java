@@ -112,12 +112,12 @@ public class OperationController {
 		
 		if(!interObj.containsKey("interfaceName")) {
 			logger.info("缺少接口名称！");
-			return ResultVOUtil.error(1301);
+			return ResultVOUtil.error(1301,null);
 		}
 		
 		if(!interObj.containsKey("requestUrl")||!interObj.containsKey("method")) {
 			logger.info("缺少参数");
-			return ResultVOUtil.error(1301);
+			return ResultVOUtil.error(1301,null);
 		}
 		
 		

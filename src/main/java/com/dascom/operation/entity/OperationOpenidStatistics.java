@@ -12,19 +12,19 @@ public class OperationOpenidStatistics implements Serializable{
 
 	private static final long serialVersionUID = -6951301873293971005L;
 	
-	@Id
-	private String _id;
+	/*@Id
+	private String _id;*/
 	private String statistics_date;       //统计时间
 	private int print_total;             //打印总数
 	private int total_openid;           //openid总数  
 	private int today_openid;          //当天openid使用数量
 	private int new_openid;           //当天openid新增数量
-	public String get_id() {
+	/*public String get_id() {
 		return _id;
 	}
 	public void set_id(String _id) {
 		this._id = _id;
-	}
+	}*/
 	public String getStatistics_date() {
 		return statistics_date;
 	}

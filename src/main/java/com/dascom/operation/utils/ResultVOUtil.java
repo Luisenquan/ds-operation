@@ -15,9 +15,10 @@ public class ResultVOUtil {
 		return success(null);
 	}
 	
-	public static ResultVO error(Integer code) {
+	public static ResultVO error(Integer code,String data) {
 		ResultVO resultVO = new ResultVO();
 		resultVO.setCode(code);
+		resultVO.setData(data);
 		return resultVO;
 	}
 }

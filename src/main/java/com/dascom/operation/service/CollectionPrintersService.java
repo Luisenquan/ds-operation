@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.dascom.operation.entity.CollectionPrinterActiveStatistics;
+import com.dascom.operation.entity.CollectionPrinters;
 
 
 public interface CollectionPrintersService {
@@ -12,11 +13,13 @@ public interface CollectionPrintersService {
 	int getAllDevice();
 	
 	
-	
 	//统计每日设备上线数
 	Map<String,Object> getOnlineDevice(int skip);
 	
 	//统计每月设备登陆数
 	Map<String,Integer> getOnlinePerMonth();
+	
+	//查询设备
+	CollectionPrinters fetchByNumber(String number);
 
 }

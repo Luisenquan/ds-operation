@@ -79,4 +79,14 @@ public class ColletionPrintersServiceImpl implements CollectionPrintersService {
 		return resultMap;
 	}
 
+	@Override
+	public CollectionPrinters fetchByNumber(String number) {
+		Query query = new Query();
+		query.addCriteria(Criteria.where("number").is(number));
+		return cloudDeviceMongoTemplate.findOne(query, CollectionPrinters.class);
+	}
+	
+	
+	
+
 }
