@@ -22,4 +22,10 @@ public interface RedisService {
 	//查询所有打印机状态
 	Map<String, String> getPrinterState();
 	
+	//查询打印机设备状态是否占用
+	boolean getAndSet(String number);
+	
+	//删除redis中该设备的占用标记
+	void delUsing(String number);
+	
 }

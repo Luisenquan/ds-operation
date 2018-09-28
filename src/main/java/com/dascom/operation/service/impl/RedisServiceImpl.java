@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,8 @@ public class RedisServiceImpl implements RedisService {
 	@Autowired
 	@Qualifier("printerRedis")
 	private  RedisConnectionFactory printerRedis;
+	
+	private String using = "tcp_using";
 	
 	private  Jedis getRedis() {
 		Jedis redis = (Jedis) interfaceRedis.getConnection().getNativeConnection();
@@ -133,6 +136,29 @@ public class RedisServiceImpl implements RedisService {
 			printerStatus.put(id, status);
 		}
 		return printerStatus;
+	}
+
+	
+	@Override
+	/**
+	 * 设备是否被占用，如果不是，设置为占用状态
+	 */
+	public boolean getAndSet(String number) {
+		Jedis redis = printerRedis();
+		String key = using + number;
+		String value = redis.get(key);
+		if(StringUtils.isEmpty(value) || !Boolean.valueOf(value)) {
+			redis.set(key, "true");
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public void delUsing(String number) {
+		Jedis redis = printerRedis();
+		String key = using + number;
+		redis.del(key);
 	}
 
 

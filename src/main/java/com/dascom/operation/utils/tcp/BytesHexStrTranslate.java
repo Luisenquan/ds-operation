@@ -7,7 +7,7 @@ package com.dascom.operation.utils.tcp;
  * @time 2018年9月26日 下午1:50:47
  * @project_name ds-operation
  */
-public class HexToByteArray {
+public class BytesHexStrTranslate {
 
 	public static byte[] hexToByteArray(String inHex) {
 		int hexlen = inHex.length();
@@ -32,5 +32,22 @@ public class HexToByteArray {
 	public static byte hexToByte(String inHex) {
 		return (byte)Integer.parseInt(inHex,16);
 	}
+	
+	 private static final char[] HEX_CHAR = {'0', '1', '2', '3', '4', '5', 
+	            '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};
+	
+	 /**
+	  *  数组转16进制字符串
+	  */
+	 public static String bytesToHex(byte[] bytes) {
+	        char[] buf = new char[bytes.length * 2];
+	        int index = 0;
+	        for(byte b : bytes) { // 利用位运算进行转换，可以看作方法一的变种
+	            buf[index++] = HEX_CHAR[b >>> 4 & 0xf];
+	            buf[index++] = HEX_CHAR[b & 0xf];
+	        }
+	        return new String(buf);
+	    }
+
 
 }

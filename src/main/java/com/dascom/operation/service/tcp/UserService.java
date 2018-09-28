@@ -2,8 +2,8 @@ package com.dascom.operation.service.tcp;
 
 import com.dascom.operation.vo.ResultVO;
 
-public interface UpdateWifiService {
+public interface UserService {
 	
-	ResultVO updateWifi(String number,String data);
-	
+	ResultVO updateUer(String number, String base64Data);
+
 }

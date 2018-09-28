@@ -1,7 +1,6 @@
 package com.dascom.operation.service.tcp;
 
-import java.io.UnsupportedEncodingException;
-
+import com.dascom.operation.entity.tcp.WifiConfig;
 import com.dascom.operation.vo.ResultVO;
 
 public interface DeviceService {
@@ -10,7 +9,10 @@ public interface DeviceService {
 	ResultVO readDevice(String number);
 	
 	//18H  设备配置
-	void setDevice(String number);
+	ResultVO setDevice(String number,WifiConfig wifiConfig);
+	
+	//11H 设置设备重启
+	ResultVO RestartDevice(String number);
 	
 
 }
